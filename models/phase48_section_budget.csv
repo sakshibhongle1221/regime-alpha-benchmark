@@ -1,0 +1,10 @@
+section,target_pages,purpose
+Abstract,0.25,Clear limited-support result and no-tradable-alpha boundary.
+Introduction,0.75,Motivate validation repair as the central contribution.
+Related Work,0.5,"Financial ML validation, HMMs, contrastive learning, boosting baselines."
+Data and Validation Protocol,0.85,"Common-calendar fold-local repair, evidence roles, locked-holdout rules."
+Methods,0.7,Regime assignment families and frozen guided-HMM mechanism candidate.
+Results,1.05,"Locked result table, primary rule, and diagnostic non-switching boundary."
+Discussion and Limitations,0.85,Negative/limited result interpretation and future-test boundary.
+Reproducibility,0.35,"Artifacts, scripts, gates, and archive limitation."
+References,0.7,Tight starter bibliography; final venue pass still required.

@@ -1,0 +1,265 @@
+{
+  "run_id": "20260522_phase14b_baseline",
+  "created_at_utc": "2026-05-21T22:15:44+00:00",
+  "phase": "phase14b_baseline",
+  "notes": "Frozen Phase 14B baseline before Phase 15 statistical and encoder work.",
+  "source_ref": "v1.3-phase14b",
+  "source_commit": "f0902b21057d3dc464ce9e31d6be718a70531c63",
+  "git_branch": "codex/phase-15-artifact-versioning",
+  "git_tags_pointing_at_source": [
+    "v1.3-phase14b"
+  ],
+  "dirty_worktree_at_archive_time": true,
+  "git_status_short_at_archive_time": [
+    "M .gitignore",
+    " M README.md",
+    " M dashboard.py",
+    " M models/validation_audit.csv",
+    " M reports/regime_alpha_benchmark_report.md",
+    " M src/validation_audit.py",
+    "?? reports/compute_budget.md",
+    "?? reports/model_card.md",
+    "?? runs/",
+    "?? src/archive_run.py"
+  ],
+  "python_version": "3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "artifact_count": 39,
+  "missing_artifacts": [],
+  "artifacts": [
+    {
+      "source_path": "README.md",
+      "archived_path": "runs/20260522_phase14b_baseline/README.md",
+      "bytes": 16863,
+      "sha256": "b7377cd4c3579d5c965ae4cff1ef9a74708fabb64a3d71dfe184766413d6d0a0"
+    },
+    {
+      "source_path": "requirements.txt",
+      "archived_path": "runs/20260522_phase14b_baseline/requirements.txt",
+      "bytes": 34,
+      "sha256": "edec54fa81ea06245da4213b87b42692611abdb0d90361611c96abbe87606952"
+    },
+    {
+      "source_path": "requirements-research.txt",
+      "archived_path": "runs/20260522_phase14b_baseline/requirements-research.txt",
+      "bytes": 250,
+      "sha256": "d541d6c96f427f4d4f8884652fc5d844367d248d484d146bdbf76ad415daf305"
+    },
+    {
+      "source_path": "reports/regime_alpha_benchmark_report.md",
+      "archived_path": "runs/20260522_phase14b_baseline/reports/regime_alpha_benchmark_report.md",
+      "bytes": 16098,
+      "sha256": "70a0d98c10b4dc67814bf72b73e8d839109fd78b6b2b1129ba2a3b59273c3c91"
+    },
+    {
+      "source_path": "reports/model_card.md",
+      "archived_path": "runs/20260522_phase14b_baseline/reports/model_card.md",
+      "bytes": 5744,
+      "sha256": "945727f52a59fb5e3a0c1488bd9ebf374bd1ac020c1a5d1f3b07ce68e613a61b"
+    },
+    {
+      "source_path": "reports/compute_budget.md",
+      "archived_path": "runs/20260522_phase14b_baseline/reports/compute_budget.md",
+      "bytes": 3711,
+      "sha256": "a2fa7b9c725f6492c8bea55e61b51f397a12bfe469df635be53fd0f6cc9acc9e"
+    },
+    {
+      "source_path": "models/experiment_results.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/experiment_results.csv",
+      "bytes": 1417,
+      "sha256": "ddb1edef271bdc886b1419125fdb67e2e901034256252bdff6ee91cd7770c9f5"
+    },
+    {
+      "source_path": "models/strategy_comparison.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/strategy_comparison.csv",
+      "bytes": 1417,
+      "sha256": "ddb1edef271bdc886b1419125fdb67e2e901034256252bdff6ee91cd7770c9f5"
+    },
+    {
+      "source_path": "models/regime_benchmark_summary.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/regime_benchmark_summary.csv",
+      "bytes": 714,
+      "sha256": "5c3e4422431f9159affcf6b8d1fa2b94df6e73c889ddf14427db4f364fe4c06f"
+    },
+    {
+      "source_path": "models/regime_stability_summary.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/regime_stability_summary.csv",
+      "bytes": 4182,
+      "sha256": "833729570b7cb5c37076d414e80392b5f87b1d3a61653d82cfca3989fac75d61"
+    },
+    {
+      "source_path": "models/per_regime_stats.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/per_regime_stats.csv",
+      "bytes": 8000,
+      "sha256": "66a163f5227d3e206fca43e5d694abbd250513c64c05737420772e6018d3c512"
+    },
+    {
+      "source_path": "models/validation_audit.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/validation_audit.csv",
+      "bytes": 3028,
+      "sha256": "d283a820df39d0960ea5722dce2b64868569038df14b65f75f962c6c49e21692"
+    },
+    {
+      "source_path": "models/fold_audit.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/fold_audit.csv",
+      "bytes": 1603,
+      "sha256": "a96b22f5961ebe088ad2e22dfea80be838a4a24b8e3341da9beee0a673ba5b19"
+    },
+    {
+      "source_path": "models/walkforward_experiment_results.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/walkforward_experiment_results.csv",
+      "bytes": 1409,
+      "sha256": "e3e466429af3ae381f424fdccc90f7f6e2b524b1ac8bce220e8440c517cef983"
+    },
+    {
+      "source_path": "models/walkforward_comparison.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/walkforward_comparison.csv",
+      "bytes": 1510,
+      "sha256": "1ed9148bf98e5ea7a4e9cabff2e0a9f8ca962cb549048557b84a452e1c053a94"
+    },
+    {
+      "source_path": "models/walkforward_regime_summary.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/walkforward_regime_summary.csv",
+      "bytes": 895,
+      "sha256": "527f6d170a3c58f20c21b4211dab4bd3480a93c9f42e326936d816f5a3ada917"
+    },
+    {
+      "source_path": "models/robustness_results.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_results.csv",
+      "bytes": 11321,
+      "sha256": "e51da38bda69033ec121f09c42629f49d0fd202c6b957f7788b264f80aba2105"
+    },
+    {
+      "source_path": "models/robustness_summary.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_summary.csv",
+      "bytes": 1562,
+      "sha256": "6e11e49f5fdc2d9958a8385c61297b50f016e2b6b18b9c54ad114f3e68fe2e82"
+    },
+    {
+      "source_path": "models/robustness_wins.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_wins.csv",
+      "bytes": 455,
+      "sha256": "eaaa5e2ee3c9f71809c28b0f96a66f34302253730a13c9966161274507e01815"
+    },
+    {
+      "source_path": "models/robustness_stress_results.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_stress_results.csv",
+      "bytes": 71165,
+      "sha256": "ded61eb5b7a6cc48dda59b64e061863c3d5b448de2648583fb2ca0d3c10da7cd"
+    },
+    {
+      "source_path": "models/robustness_stress_summary.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_stress_summary.csv",
+      "bytes": 8625,
+      "sha256": "7a8115639cb3bd195444fef4e3268f231bf92aad9b4bd9b05452c3f776e86741"
+    },
+    {
+      "source_path": "models/robustness_stress_wins.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_stress_wins.csv",
+      "bytes": 569,
+      "sha256": "2d26b9c3ce28ec38373deb86aff8c8a9cf5778371926bcf695bac97782918544"
+    },
+    {
+      "source_path": "models/target_distribution.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/target_distribution.csv",
+      "bytes": 1583,
+      "sha256": "d50d08c87f14ee4b1f11c5ccd26c82e4f3718e7e0c4aab4426ccf3e641692693"
+    },
+    {
+      "source_path": "models/target_quality.csv",
+      "archived_path": "runs/20260522_phase14b_baseline/models/target_quality.csv",
+      "bytes": 1222,
+      "sha256": "f5a8b22a9795d6bed55a40f31225e5324a19ec1134347e22a3c532654b1ab6a8"
+    },
+    {
+      "source_path": "models/equity_curve.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/equity_curve.png",
+      "bytes": 372583,
+      "sha256": "5dc89b94963ba4d477d1d79bddf78d050f6cebeed2dff478c5d650cbca92897f"
+    },
+    {
+      "source_path": "models/loss_curve.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/loss_curve.png",
+      "bytes": 33935,
+      "sha256": "b7267f355ca97a249bd9584cd4c3fa31182e47311689b3e8e535eebbf78dce32"
+    },
+    {
+      "source_path": "models/phase4_dashboard.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/phase4_dashboard.png",
+      "bytes": 437012,
+      "sha256": "edcf73b8435a05ae70e65f629beec63bfecf7a31c8415114fc083a11b102eff4"
+    },
+    {
+      "source_path": "models/regime_stability.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/regime_stability.png",
+      "bytes": 148438,
+      "sha256": "65d34a348ca4068302c861e6bbd8b9c9cb07fbf86915a950896e9cb1c415c02a"
+    },
+    {
+      "source_path": "models/regime_timeline.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/regime_timeline.png",
+      "bytes": 170476,
+      "sha256": "5dfa83f239f83297bd4089dddc77aa498527ba207643da72f2dddf05ed399e82"
+    },
+    {
+      "source_path": "models/robustness_heatmap.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_heatmap.png",
+      "bytes": 49682,
+      "sha256": "6c59679baf4229fce21c79084ac1fcca116bd68bc3a6ac0b84bc52775836b58e"
+    },
+    {
+      "source_path": "models/robustness_stress_heatmap.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/robustness_stress_heatmap.png",
+      "bytes": 227965,
+      "sha256": "aca98dc279053e86298aedb65246a6b45deef53718dfb5b392fdc77c6eaaa776"
+    },
+    {
+      "source_path": "models/target_distribution.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/target_distribution.png",
+      "bytes": 49545,
+      "sha256": "1e519ea64e6d2946906c105ec7ae284c0cd0a5ea822b5dbe912567910b0f6a76"
+    },
+    {
+      "source_path": "models/transition_matrix_contrastive.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/transition_matrix_contrastive.png",
+      "bytes": 37492,
+      "sha256": "4e57ffe5572a1951382210152a723df40e57738c7d963a9b8f20be9f2c3c08d5"
+    },
+    {
+      "source_path": "models/transition_matrix_contrastive_hmm.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/transition_matrix_contrastive_hmm.png",
+      "bytes": 37319,
+      "sha256": "48212a475fcb5918f65935a13023d8a5ec11607c5a398c7a88345d7f660f328a"
+    },
+    {
+      "source_path": "models/transition_matrix_hmm.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/transition_matrix_hmm.png",
+      "bytes": 36506,
+      "sha256": "de406466039890064c61d6198b647b6883586ab89ec52f71a5627cecd3293310"
+    },
+    {
+      "source_path": "models/transition_matrix_kmeans.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/transition_matrix_kmeans.png",
+      "bytes": 38249,
+      "sha256": "b2aa2395f78bbe19f33595f1d620baf0112ce5df26ac7fcf8a7174cf41459416"
+    },
+    {
+      "source_path": "models/transition_matrix_vol_bucket.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/transition_matrix_vol_bucket.png",
+      "bytes": 38644,
+      "sha256": "de067d0b4c39e78632189b90ef3386850f308902cf7eae989c1d9d1904d17141"
+    },
+    {
+      "source_path": "models/umap_improved.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/umap_improved.png",
+      "bytes": 1500961,
+      "sha256": "86621ffd61450d1d75d358ec7c16b7b45fcf5751ebeccbe45dc53b1953d43c6e"
+    },
+    {
+      "source_path": "models/umap_regimes.png",
+      "archived_path": "runs/20260522_phase14b_baseline/models/umap_regimes.png",
+      "bytes": 336678,
+      "sha256": "713b4e2b3fcd2563b5dc4140367b40d9ade90145867e4e23cd1c5497b982da04"
+    }
+  ]
+}

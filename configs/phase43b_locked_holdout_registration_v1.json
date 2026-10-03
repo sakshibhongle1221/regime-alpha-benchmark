@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "phase": "43B-register",
+  "registration_id": "phase43b-locked-holdout-registration-v1",
+  "parent_freeze_id": "phase43-locked-holdout-freeze-v1",
+  "registration_date": "2026-06-30",
+  "data_role": "locked_unobserved_registration_only",
+  "purpose": "Register and hash the locked holdout membership before any frozen-model outcome is evaluated.",
+  "source_universe": "configs/crypto_universe_candidates.csv",
+  "development_universe": "models/asset_universe_crypto20.csv",
+  "preferred_holdout": "external_asset_holdout",
+  "selection_rule": "Select the next pre-ranked quality-eligible USDT spot assets not included in the Crypto-20 development universe, using only ingestion/coverage/quality checks and no model outcomes.",
+  "minimum_assets": 10,
+  "quality_gates": {
+    "minimum_hourly_bars": 12000,
+    "maximum_gap_hours": 6.0,
+    "require_features": true,
+    "require_targets": true,
+    "stable_or_synthetic_assets_forbidden": true
+  },
+  "forbidden_inputs": [
+    "model_predictions",
+    "alpha_metrics",
+    "method_rankings_on_holdout",
+    "threshold_search_on_holdout",
+    "candidate_selection_on_holdout",
+    "rerun_after_failure"
+  ],
+  "allowed_outputs_before_evaluation": [
+    "candidate_quality_table",
+    "registered_symbol_manifest",
+    "coverage_hashes",
+    "blocked_not_ready_status"
+  ],
+  "next_step_if_ready": "Run the frozen Phase 43A candidate exactly once under the locked evaluation protocol.",
+  "next_step_if_blocked": "Ingest and build features/targets for the next pre-ranked external candidates, then rerun registration before any model evaluation."
+}

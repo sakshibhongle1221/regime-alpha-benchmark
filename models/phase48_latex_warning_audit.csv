@@ -1,0 +1,5 @@
+check_id,status,detail
+pdf_compilation,pass,pdf_exists=True; pages=2; bytes=369573
+build_logs_available,pass,latex_log=True; bibtex_log=True
+warning_cleanup,review_required,warnings=Package balance Warning
+page_budget,pass,pages=2; active venue limit must still be verified.

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "phase": "43A",
+  "freeze_id": "phase43-locked-holdout-freeze-v1",
+  "freeze_date": "2026-06-30",
+  "data_role": "locked_unobserved_until_phase43b",
+  "decision": "freeze_one_final_protocol_before_any_locked_holdout_outcome",
+  "final_candidate": {
+    "method": "regime_lgbm_hmm_guided_hmm",
+    "mechanism": "HMM-guided contrastive representation with sequential HMM assignment and regime-conditioned LightGBM alpha models",
+    "reason": "This is the originally proposed mechanism path. It is frozen for confirmatory testing even though repaired development evidence is weak/inconclusive."
+  },
+  "primary_references": [
+    "global_lgbm",
+    "regime_lgbm_hmm"
+  ],
+  "secondary_diagnostic_references": [
+    "regime_lgbm_kmeans",
+    "regime_lgbm_vol_bucket",
+    "regime_lgbm_hmm_guided_gmm"
+  ],
+  "excluded_from_final_candidate": [
+    "phase41b_probability_calibration",
+    "phase41b_soft_gating",
+    "score_threshold_execution_control",
+    "new_architecture_search",
+    "new_feature_selection",
+    "new_label_or_horizon_selection"
+  ],
+  "frozen_development_basis": {
+    "development_freeze_id": "crypto20-development-v1",
+    "primary_repaired_artifacts": [
+      "models/crypto20_repaired_fold_local_experiment_results.csv",
+      "models/crypto20_repaired_fold_local_statistical_claims.csv",
+      "reports/phase40_repaired_statistical_adjudication.md",
+      "reports/phase42_interpretation_execution_hardening.md"
+    ],
+    "development_interpretation": "Development evidence is weak/negative; locked evaluation is confirmatory and must not be used for rescue tuning."
+  },
+  "locked_holdout_rule": {
+    "preferred_holdout": "external_asset_holdout",
+    "source_universe": "configs/crypto_universe_candidates.csv",
+    "selection_rule": "Select the next pre-ranked quality-eligible USDT spot assets not included in asset_universe_crypto20.csv after ingestion and quality checks, without inspecting model outcomes.",
+    "minimum_assets": 10,
+    "quality_gates": {
+      "minimum_hourly_bars": 12000,
+      "maximum_gap_hours": 6,
+      "stable_or_synthetic_assets_forbidden": true,
+      "leveraged_tokens_forbidden": true,
+      "coverage_and_hash_manifest_required": true
+    },
+    "fallback_holdout": "future_temporal_holdout_strictly_after_crypto20_development_endpoint",
+    "fallback_rule": "Use only data strictly after 2026-06-15 02:30 Asia/Kolkata, collected and hashed before any model outcome inspection."
+  },
+  "locked_evaluation_protocol": {
+    "validation": "same repaired common-calendar purged walk-forward protocol",
+    "target": "tb_label_8h",
+    "horizon_hours": 8,
+    "transaction_cost_bps": 10,
+    "rebalance": "non-overlapping 8h UTC rebalance offset 0",
+    "encoder_budget": "same repaired fold-local 5000-window encoder budget unless infeasible; any infeasibility must be reported before outcomes are inspected",
+    "candidate_selection_on_holdout": "forbidden",
+    "threshold_selection_on_holdout": "forbidden",
+    "rerun_after_failure": "forbidden"
+  },
+  "primary_metrics": [
+    "mean_asset_IC",
+    "fold_level_IC",
+    "transaction_cost_adjusted_Sharpe",
+    "total_return",
+    "max_drawdown"
+  ],
+  "claim_rules": {
+    "success_condition": "The final candidate must improve over both primary references on mean asset IC and show non-worse transaction-cost-adjusted Sharpe without violating coverage or statistical guardrails.",
+    "failure_condition": "If the final candidate does not satisfy the success condition, the paper reports a failed locked confirmation without same-holdout tuning.",
+    "allowed_claim_if_success": "The guided-HMM mechanism shows confirmatory support on the registered locked holdout.",
+    "allowed_claim_if_failure": "The guided-HMM mechanism remains a structurally motivated development finding but does not receive locked holdout confirmation.",
+    "forbidden_claims": [
+      "tradable strategy",
+      "guaranteed alpha",
+      "final-test tuning improved performance",
+      "Phase 41B calibration rescued the model",
+      "threshold tuning rescued the model"
+    ]
+  }
+}

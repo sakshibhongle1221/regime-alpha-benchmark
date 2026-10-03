@@ -1,0 +1,11 @@
+check_id,status,detail
+anonymous_acm_review_mode,pass,ACM sigconf anonymous review class is present.
+bibliography_present,pass,Draft uses phase47_references.bib.
+tables_present,pass,"Draft includes evidence, locked result, and primary-rule tables."
+no_profitable_strategy_claim,pass,Draft blocks profitability/tradability claims.
+same_holdout_rescue_blocked,pass,Draft blocks same-holdout retuning.
+source_anonymity,pass,Source anonymity audit must pass before external review.
+pdf_compilation,pass,Compiled PDF exists at paper/phase47_submission_draft.pdf; pages=2; bytes=363597.
+pdf_page_budget,pass,Compiled draft page estimate is 2; verify against the active venue limit.
+pdf_warning_review,review_required,"LaTeX/BibTeX completed with warning markers requiring human layout review: BibTeX Warning, Class acmart Warning, Overfull \hbox, Package balance Warning."
+artifact_archive,not_claimed,No artifact availability claim until DOI/permanent archive exists.

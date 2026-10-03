@@ -1,0 +1,5 @@
+table_id,title,source_artifact,status,paper_purpose,phase45_plan_rows
+T1,Evidence blocks and allowed claim boundaries,models/phase44_paper_evidence_matrix.csv,included_in_phase47_draft,Separates development-observed evidence from locked confirmatory evidence.,6
+T2,Locked external holdout method comparison,models/phase43b_locked_external_experiment_results.csv,included_in_phase47_draft,Reports all locked methods with equal coverage and no candidate switching.,6
+T3,Prewritten primary locked comparison,models/phase43b_locked_external_primary_comparison.csv,included_in_phase47_draft,Shows the exact relative IC/Sharpe rule for the frozen final candidate.,6
+T4,Final claim audit,models/phase46_final_claim_audit.csv,appendix_or_reviewer_pack,Keeps final manuscript wording inside safe claim boundaries.,6

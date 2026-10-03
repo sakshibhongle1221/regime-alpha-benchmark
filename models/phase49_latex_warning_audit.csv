@@ -1,0 +1,5 @@
+check_id,status,detail
+pdf_compilation,pass,pdf_exists=True; pages=3; bytes=428155
+build_logs_available,pass,latex_log=True; bibtex_log=True
+page_budget,pass,pages=3; active venue limit must still be verified.
+warning_cleanup,review_required,"warnings=LaTeX Warning,Package balance Warning,Underfull \vbox"

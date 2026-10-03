@@ -1,0 +1,9 @@
+citation_key,cluster,paper_role
+lopezdeprado2018afml,financial_ml_validation,Purged/embargoed financial ML validation framing.
+hamilton1989regime,regime_switching,Classical regime-switching model foundation.
+rabiner1989hmm,hidden_markov_models,HMM tutorial/reference for sequential latent states.
+oord2018cpc,contrastive_learning,Contrastive predictive coding representation learning.
+chen2020simclr,contrastive_learning,Modern contrastive objective and augmentation framing.
+tsfresh2018,time_series_features,Time-series feature extraction context.
+lightgbm2017,gradient_boosting,LightGBM baseline model citation.
+acmart,venue_formatting,ACM proceedings template placeholder; verify current venue files before submission.

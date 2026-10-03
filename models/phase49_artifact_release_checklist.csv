@@ -1,0 +1,6 @@
+item,status,action
+release_tag,pending_human_action,Create a GitHub release after Phase 49 is merged.
+archive_target,pending_human_action,Upload the release zip or connect the GitHub release to Zenodo/OSF/Figshare.
+doi,not_claimed,Do not claim artifact availability until the archive gives a DOI or persistent identifier.
+license,pending_human_action,Confirm the public license before archive publication.
+double_blind,review_required,Only add archive links during review if the venue allows non-anonymous artifacts.

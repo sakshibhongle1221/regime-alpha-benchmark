@@ -1,0 +1,8 @@
+method,protocol,implementation,n_test_assignment_rows,n_folds,n_symbols,n_regimes,avg_regime_duration,min_regime_pct,max_regime_pct,mean_confidence
+contrastive,fold_local_regime_refit,fold_local_embedding_gmm,129600,18,10,4,19.87425241527373,0.23099537037037038,0.2734490740740741,0.8258850572827314
+contrastive_hmm,fold_local_regime_refit,fold_local_embedding_hmm_online_filter,129600,18,10,4,13.373232896501909,0.20431327160493828,0.291875,0.8773641472866981
+hmm,fold_local_regime_refit,fold_local_raw_feature_hmm_online_filter,129600,18,10,4,4.710500490677134,0.19501543209876543,0.3016358024691358,0.9266040728685868
+kmeans,fold_local_regime_refit,fold_local_sklearn_kmeans,129600,18,10,4,4.159712414944152,0.19148148148148147,0.3148533950617284,1.0
+vol_bucket,fold_local_regime_refit,fold_local_volatility_quantiles,129600,18,10,4,10.375470338643824,0.1840354938271605,0.31092592592592594,1.0
+hmm_guided_gmm,fold_local_regime_refit,fold_local_guided_embedding_gmm,129600,18,10,4,21.336845571287455,0.2178317901234568,0.2704783950617284,0.9664736779850008
+hmm_guided_hmm,fold_local_regime_refit,fold_local_guided_embedding_hmm_online_filter,129600,18,10,4,23.031810911675848,0.20283179012345678,0.301875,0.9867386609833125

@@ -1,0 +1,12 @@
+metric,value,notes
+candidate_rows,75,Rows in configs/crypto_universe_candidates.csv
+eligible_with_local_history,20,Symbols already passing local DB quality gates.
+pending_ingestion,55,Candidate symbols not yet locally ingested.
+min_bars,12000,Coverage gate used for quality-gated selection.
+max_gap_hours,6.0,Maximum allowed OHLCV gap between adjacent hourly bars.
+lookback_days,730,Configured ingestion lookback.
+interval,1h,Configured bar interval.
+crypto20_rows,20,Selected rows for Crypto-20 universe.
+crypto20_eligible_now,20,Selected symbols already passing local quality gates.
+crypto50_rows,50,Selected rows for Crypto-50 universe.
+crypto50_eligible_now,20,Selected symbols already passing local quality gates.

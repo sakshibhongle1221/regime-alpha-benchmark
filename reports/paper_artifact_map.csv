@@ -1,0 +1,44 @@
+paper_section,artifact_type,artifact,paper_role
+Abstract and thesis,claim control,reports/phase44_paper_readiness_package.md,Defines the paper-safe story after locked holdout.
+Reviewer brief,reviewer response,reports/phase44_reviewer_brief.md,Pre-writes safe answers to expected reviewer objections.
+Validation repair,audit,reports/phase39r_neural_fold_local_results.md; models/research_grade_check_report.md,Documents the repaired common-calendar validation protocol.
+Development benchmark,result table,models/crypto20_repaired_fold_local_experiment_results.csv,Shows repaired development-observed alpha behavior.
+Development statistics,statistical test,models/crypto20_repaired_fold_local_statistical_method_summary.csv; reports/phase40_repaired_statistical_adjudication.md,Quantifies uncertainty and prevents corrected dominance claims.
+Mechanism diagnostics,diagnostic,reports/phase42_interpretation_execution_hardening.md; models/phase42_execution_stress_summary.csv,Explains alpha fragility without tuning a new model.
+Locked external holdout,confirmatory result,models/phase43b_locked_external_experiment_results.csv; reports/phase43b_locked_external_adjudication.md,One-shot locked external evaluation of the frozen final candidate.
+Reproducibility,artifact gate,reports/artifact_manifest.md; reports/reproduction_checklist.md; models/research_grade_check_report.md,"Documents what is committed, ignored, and checked."
+Submission risk,risk register,models/phase44_submission_risk_register.csv,Lists reviewer-facing failure modes and mitigations.
+Pre-push hardening,audit,reports/phase44_prepush_hardening_audit.md,"Records stale-claim cleanup, reviewer-risk checks, and final pre-push gates."
+Venue manuscript,manuscript source,paper/phase45_venue_ready_manuscript.md,"Structured venue-facing manuscript source with limited locked relative support and no tradable-alpha claim."
+Venue table plan,table plan,models/phase45_table_plan.csv,"Maps final manuscript tables to committed evidence artifacts."
+Venue figure plan,figure plan,models/phase45_figure_plan.csv,"Maps final manuscript figures to existing evidence and drawing needs."
+Venue claim map,claim control,models/phase45_claim_to_section_map.csv,"Pins allowed claims and forbidden extensions to exact manuscript sections."
+Venue requirement audit,venue audit,models/phase45_venue_requirement_audit.csv,"Maps ICAIF/ACM-style submission, template, anonymity, self-contained paper, and artifact-archive constraints to Phase 45/46 actions."
+External research audit,venue audit,reports/phase45_external_research_audit.md,"Summarizes primary-source venue research and reviewer-facing Phase 45 hardening decisions."
+Final submission manuscript,manuscript source,paper/phase46_submission_manuscript.md,"Provides the final anonymous self-contained manuscript source for final formatting."
+ACM skeleton,LaTeX skeleton,paper/phase46_acm_sigconf_skeleton.tex,"Provides the anonymous ACM sigconf review skeleton for final paper conversion."
+Final completion package,completion audit,reports/phase46_final_research_completion.md,"Marks the repository evidence package research-complete while preserving no-tradable-alpha and no-same-holdout-rescue boundaries."
+Submission gate,submission audit,models/phase46_submission_gate_matrix.csv,"Records final pass/conditional/not-yet gates before external blind submission."
+Reviewer response pack,reviewer response,reports/phase46_reviewer_response_pack.md,"Prepares concise reviewer-facing responses to likely objections without overclaiming."
+Submission draft,manuscript source,paper/phase47_submission_draft.tex,"Build-oriented anonymous ACM review draft preserving limited locked relative support and no tradable-alpha claim."
+Reference file,bibliography,paper/phase47_references.bib,"Starter BibTeX source for the Phase 47 submission draft; final related-work pass still required."
+Compiled submission draft,compiled manuscript,paper/phase47_submission_draft.pdf,"Locally compiled ACM review PDF; still requires warning cleanup, venue-template verification, and PDF/metadata anonymity review before external submission."
+Submission build audit,submission audit,models/phase47_manuscript_build_audit.csv,"Records source/build readiness, compiled PDF evidence, page-budget estimate, warning-review status, claim-control checks, and artifact-archive status."
+Blind-review hardening,anonymity audit,reports/phase47_blind_review_hardening.md,"Audits Phase 47 source-level anonymity and records PDF/metadata checks still required before external review."
+Camera-ready gap list,submission checklist,reports/phase47_camera_ready_gap_list.md,"Lists remaining venue-template, warning cleanup, figure, citation, anonymity, and archive steps before external submission."
+Review-ready manuscript,manuscript source,paper/phase48_review_ready_manuscript.tex,"Polished anonymous ACM review source with limited locked relative support and explicit blocked deployment/rescue claims."
+Review-ready references,bibliography,paper/phase48_references.bib,"Phase 48 BibTeX source used by the review-ready manuscript."
+Compiled review-ready draft,compiled manuscript,paper/phase48_review_ready_manuscript.pdf,"Locally compiled review PDF for human/advisor reading before external venue submission."
+Phase 48 quality audit,submission audit,models/phase48_paper_quality_audit.csv,"Checks anonymity mode, claim boundaries, locked-holdout boundary, candidate-switching boundary, negative-result framing, and warning-state recording."
+Phase 48 claim traceability,claim control,models/phase48_claim_traceability.csv,"Maps allowed and blocked claims to evidence artifacts and safe wording."
+Phase 48 reviewer guide,reviewer response,reports/phase48_reviewer_reading_guide.md,"Gives reviewers the intended reading order plus allowed/blocked claim boundaries."
+Phase 48 warning audit,PDF build audit,models/phase48_latex_warning_audit.csv,"Records compiled-PDF status, build-log availability, page budget, and remaining LaTeX/PDF warning state."
+Submission-ready manuscript,manuscript source,paper/phase49_submission_ready_manuscript.tex,"Final repository-side anonymous ACM source with F1/F2 figures, expanded citations, and unchanged locked-holdout claim boundaries."
+Submission-ready references,bibliography,paper/phase49_references.bib,"Phase 49 BibTeX source with added time-series contrastive-learning references."
+Compiled submission-ready draft,compiled manuscript,paper/phase49_submission_ready_manuscript.pdf,"Locally compiled anonymous PDF target for human/advisor layout review before external submission."
+Validation repair figure,figure,paper/figures/phase49_f1_validation_repair.svg,"Shows why positional folds were invalidated and how repaired common-calendar folds remove cross-asset calendar overlap."
+System overview figure,figure,paper/figures/phase49_f2_system_overview.svg,"Shows the leakage-safe pipeline from OHLCV features through HMM weak labels, contrastive encoder, regime assignment, LightGBM, and claim-audited metrics."
+Phase 49 closure audit,submission audit,models/phase49_submission_closure_audit.csv,"Checks final figures, citation expansion, metadata anonymity, warning-state recording, artifact boundary, and no model/final-data change."
+Phase 49 metadata audit,anonymity audit,models/phase49_pdf_metadata_audit.csv,"Scans the compiled PDF target for obvious author, local-path, repository, and identity leakage."
+Phase 49 warning audit,PDF build audit,models/phase49_latex_warning_audit.csv,"Records compiled-PDF status, build-log availability, page budget, and remaining LaTeX/PDF warning state."
+Phase 49 artifact release guide,artifact policy,reports/phase49_artifact_release_guide.md,"Keeps artifact availability unclaimed until a human creates a persistent archive or DOI allowed by venue rules."

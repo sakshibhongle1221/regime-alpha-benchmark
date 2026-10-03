@@ -1,0 +1,44 @@
+check,status,severity,rows_checked,rows_failed,detail
+regime_discovery_protocol,WARN,methodological,173770,0,Legacy regime_assignments.csv is an offline/global artifact. Use walkforward_experiment_results.csv for fold-local predictive regime claims.
+ablation_artifacts,PASS,critical,60,0,"result_rows=48; summary_rows=12; families=4; decisions={'supported': 5, 'mixed': 3, 'do_not_expand_yet': 2, 'not_supported': 1, 'directional_support_statistical_refresh_needed': 1}"
+compute_plan_artifacts,PASS,critical,13,0,profile_rows=1; budget_rows=12; complete=2; active_next=0; prototype_pending=1; budget_status=green; summary_rows=8
+crypto20_alpha_retest_artifacts,PASS,critical,19,0,result_rows=6; summary_rows=5; guided_comparison_rows=8; symbol_counts=[20]; best_ic_method=regime_lgbm_kmeans; hmm_guided_hmm_ic=0.0226; hmm_guided_hmm_sharpe=-0.0573
+crypto20_guided_encoder_artifacts,PASS,critical,43,0,files_present=6/6; hmm_guided_hmm_nmi=0.694; hmm_guided_hmm_silhouette=0.399; loss_rows=30; loss_drop=0.3258->0.0864; comparison_rows=5
+crypto20_guided_readiness_artifacts,PASS,critical,43,0,files_present=6/6; symbol_rows=20; pair_metrics=12; compute_scenarios=4; gate_status=pass
+crypto20_regime_artifacts,PASS,critical,292,0,"files_present=7/7; summary_rows=3; stats_rows=222; symbol_summary_rows=60; methods=['hmm', 'kmeans', 'vol_bucket']"
+crypto20_statistical_artifacts,PASS,critical,336,0,fold_rows=96; asset_rows=120; summary_rows=6; pairwise_rows=84; fold_methods=6; fold_count_range=16-16; asset_count_range=20-20; primary_comparison_rows=12; guided_vs_hmm_ic_p=0.840
+experiment_results_match_predictions,PASS,critical,6,0,experiment_results.csv n_test_rows matches alpha_oos_predictions.csv.
+feature_columns_present,PASS,critical,22,0,All 22 configured feature columns exist.
+feature_source_no_obvious_future_ops,PASS,critical,0,0,No shift(-h) or centered rolling windows found in features.py.
+features_symbol_rows,PASS,critical,2,0,"features counts: BTCUSDT=18647, ETHUSDT=18647"
+fold_embargo_and_label_purge,PASS,critical,18,0,"18/18 folds satisfy row separation, 120-bar embargo, and 8-bar label-horizon purge."
+fold_local_regime_refit_artifacts,PASS,critical,8,0,"Fold-local rows by method: global_lgbm=25920, regime_lgbm_contrastive=25920, regime_lgbm_contrastive_hmm=25920, regime_lgbm_hmm=25920, regime_lgbm_kmeans=25920, regime_lgbm_vol_bucket=25920, regime_lgbm_hmm_guided_gmm=25920, regime_lgbm_hmm_guided_hmm=25920"
+guided_encoder_artifacts,PASS,critical,32,0,summary_rows=2; loss_rows=30; comparison_rows=7; epochs=30; best_hmm_reference_nmi=0.869; guided_nmi_minus_contrastive=0.837
+interpretability_artifacts,PASS,critical,252,0,"global_rows=22; regime_rows=176; family_rows=54; guided_regimes=['0', '1', '2', '3']; guided_top_features=vol_20h,vol_20h,vol_20h,vol_20h"
+joined_model_rows_are_finite,PASS,critical,37246,0,Joined feature/target rows contain no NaN/inf values.
+literature_positioning_artifacts,PASS,critical,13,0,matrix_rows=13; clusters=5
+multiasset_universe_artifacts,PASS,critical,175,0,files_present=10/10; candidates=75; crypto20=20; crypto50=50; crypto20_eligible_now=20; crypto50_eligible_now=20; crypto20_quality_pass=20
+ohlcv_symbol_rows,PASS,critical,2,0,"ohlcv counts: BTCUSDT=18707, ETHUSDT=18707"
+oos_prediction_equal_method_coverage,PASS,critical,6,0,"Prediction rows by method: global_lgbm=25920, regime_lgbm_contrastive=25920, regime_lgbm_contrastive_hmm=25920, regime_lgbm_hmm=25920, regime_lgbm_kmeans=25920, regime_lgbm_vol_bucket=25920"
+oos_prediction_no_duplicate_method_rows,PASS,critical,155520,0,No duplicated method/symbol/feat_idx predictions.
+oos_prediction_rows_match_test_folds,PASS,critical,155520,0,All prediction rows fall inside their recorded fold test windows.
+oos_prediction_schema,PASS,critical,0,0,alpha_oos_predictions.csv has required audit columns.
+paper_draft_artifacts,PASS,critical,30,0,paper_files=3/3; section_checks=13; artifact_map_rows=14
+paper_protocol_artifacts,PASS,critical,40,0,protocol_files=6/6; section_checks=34
+paper_statistical_artifacts,PASS,critical,37,0,"test_rows=25; summary_rows=12; statuses={'directionally_supported': 3, 'mechanism_supported_no_fold_p_value': 2, 'do_not_expand_yet': 2, 'mixed_structural_evidence': 2, 'raw_suggestive': 1, 'not_supported': 1, 'mixed_directional': 1}"
+phase38_control_artifacts,PASS,critical,47,0,role_rows=5; ledger_rows=25; development_rows=2; locked_or_future_rows=2; invalid_inspected_locks=0; final_locked_rows=2; inspected_final_rows=0
+phase39_fold_local_validity,PASS,critical,234,0,"Validated temporal boundaries, hashes, encoder lineage, and equal coverage for 16 fold(s) and all eight methods."
+phase39_full_development_run,PASS,research,16,0,"Full 16-fold, 30-epoch-cap frozen-budget development protocol is present."
+primary_target_columns_present,PASS,critical,2,0,"Primary target columns exist: ['tb_label_8h', 'forward_return_8h']."
+regime_assignment_common_coverage,PASS,critical,5,0,"Regime assignment rows by method: contrastive=34754, contrastive_hmm=34754, hmm=34754, kmeans=34754, vol_bucket=34754"
+regime_quality_artifacts,PASS,critical,90,0,"summary_rows=15, expected=15; all_scope_methods=5; agreement_rows=75, expected=75"
+reproducibility_artifacts,PASS,critical,49,0,repro_files=8/8; phrase_checks=41
+required_tables_exist,PASS,critical,0,0,"ohlcv, features, and targets tables exist."
+robustness_matrix_artifacts,PASS,critical,72,0,"robustness rows=72, expected=72; grid_cells=9; summary_cells=9"
+robustness_stress_artifacts,PASS,critical,384,0,"stress rows=384, expected=384; stress_cells=48; summary_cells=48"
+run_registry_artifacts,PASS,critical,39,0,registered_runs=1; latest_run=20260522_phase14b_baseline; latest_artifacts=39; text_hash_drifts=4
+statistical_test_artifacts,PASS,critical,144,0,"fold_metric_rows=144, expected=144; methods=8; summary_rows=8; pairwise_rows=98; compact_rows=42; corrected_rows=98; claim_rows=42; psr_rows=8"
+target_horizon_tail_loss,PASS,critical,2,0,"BTCUSDT: feature_rows=18647, target_rows=18623, lost=24, expected_loss=24, target_latest=2026-06-14 02:30:00+05:30; ETHUSDT: feature_rows=18647, target_rows=18623, lost=24, expected_loss=24, target_latest=2026-06-14 02:30:00+05:30"
+targets_symbol_rows,PASS,critical,2,0,"targets counts: BTCUSDT=18623, ETHUSDT=18623"
+time_frequency_encoder_artifacts,PASS,critical,5,0,summary_rows=2; loss_rows=3; comparison_rows=7; epochs=3; best_hmm_reference_nmi=0.528
+walk_forward_folds_exist,PASS,critical,18,0,"18 folds generated with initial_train, step, and embargo settings."

@@ -1,0 +1,76 @@
+design_rank,symbol,base_asset,universe_group,notes
+1,BTCUSDT,BTC,large_cap_reference,Existing pilot asset; highest-liquidity crypto benchmark anchor.
+2,ETHUSDT,ETH,large_cap_reference,Existing pilot asset; second benchmark anchor.
+3,BNBUSDT,BNB,large_cap_layer1,Large-cap exchange ecosystem asset.
+4,SOLUSDT,SOL,large_cap_layer1,High-liquidity layer-1 asset.
+5,XRPUSDT,XRP,large_cap_payment,High-liquidity payments asset.
+6,DOGEUSDT,DOGE,large_cap_meme,High-liquidity meme asset.
+7,ADAUSDT,ADA,large_cap_layer1,High-liquidity layer-1 asset.
+8,TRXUSDT,TRX,large_cap_layer1,High-liquidity layer-1 asset.
+9,LINKUSDT,LINK,large_cap_oracle,High-liquidity oracle asset.
+10,AVAXUSDT,AVAX,large_cap_layer1,High-liquidity layer-1 asset.
+11,TONUSDT,TON,large_cap_layer1,Large-cap layer-1 asset subject to exchange availability.
+12,SHIBUSDT,SHIB,large_cap_meme,High-liquidity meme asset.
+13,DOTUSDT,DOT,large_cap_layer1,High-liquidity layer-1 asset.
+14,BCHUSDT,BCH,large_cap_legacy,High-liquidity legacy crypto asset.
+15,LTCUSDT,LTC,large_cap_legacy,High-liquidity legacy crypto asset.
+16,NEARUSDT,NEAR,large_cap_layer1,High-liquidity layer-1 asset.
+17,UNIUSDT,UNI,defi,High-liquidity DeFi asset.
+18,APTUSDT,APT,layer1,High-liquidity layer-1 asset.
+19,ICPUSDT,ICP,layer1,High-liquidity layer-1 asset.
+20,ETCUSDT,ETC,legacy,High-liquidity legacy crypto asset.
+21,FILUSDT,FIL,storage,High-liquidity storage asset.
+22,ARBUSDT,ARB,layer2,High-liquidity layer-2 asset.
+23,OPUSDT,OP,layer2,High-liquidity layer-2 asset.
+24,INJUSDT,INJ,defi,High-liquidity DeFi asset.
+25,ATOMUSDT,ATOM,layer1,High-liquidity layer-1 asset.
+26,XLMUSDT,XLM,payment,High-liquidity payments asset.
+27,ALGOUSDT,ALGO,layer1,High-liquidity layer-1 asset.
+28,AAVEUSDT,AAVE,defi,High-liquidity DeFi lending asset.
+29,MKRUSDT,MKR,defi,High-liquidity DeFi governance asset.
+30,RUNEUSDT,RUNE,defi,High-liquidity DeFi asset.
+31,FETUSDT,FET,ai_data,High-liquidity AI/data themed asset.
+32,SEIUSDT,SEI,layer1,High-liquidity layer-1 asset.
+33,TIAUSDT,TIA,data_availability,High-liquidity modular blockchain asset.
+34,WLDUSDT,WLD,identity_ai,High-liquidity identity/AI themed asset.
+35,JUPUSDT,JUP,defi,High-liquidity DeFi asset subject to history coverage.
+36,PENDLEUSDT,PENDLE,defi,High-liquidity DeFi asset.
+37,STXUSDT,STX,bitcoin_ecosystem,High-liquidity Bitcoin ecosystem asset.
+38,LDOUSDT,LDO,defi,High-liquidity liquid-staking asset.
+39,GRTUSDT,GRT,data_indexing,High-liquidity data indexing asset.
+40,IMXUSDT,IMX,gaming,High-liquidity gaming/infrastructure asset.
+41,SUIUSDT,SUI,layer1,High-liquidity layer-1 asset.
+42,PEPEUSDT,PEPE,meme,High-liquidity meme asset.
+43,FLOKIUSDT,FLOKI,meme,High-liquidity meme asset.
+44,RENDERUSDT,RENDER,ai_gpu,High-liquidity AI/GPU themed asset subject to exchange symbol availability.
+45,TAOUSDT,TAO,ai,High-liquidity AI themed asset subject to exchange availability.
+46,ENAUSDT,ENA,defi,High-liquidity DeFi asset subject to history coverage.
+47,ORDIUSDT,ORDI,bitcoin_ecosystem,High-liquidity Bitcoin ecosystem asset.
+48,ARUSDT,AR,storage,High-liquidity storage asset.
+49,SANDUSDT,SAND,gaming,High-liquidity gaming asset.
+50,MANAUSDT,MANA,gaming,High-liquidity gaming asset.
+51,AXSUSDT,AXS,gaming,High-liquidity gaming asset.
+52,APEUSDT,APE,nft_culture,High-liquidity NFT/culture asset.
+53,CHZUSDT,CHZ,consumer,High-liquidity consumer/fan-token ecosystem asset.
+54,ENSUSDT,ENS,identity,High-liquidity identity asset.
+55,COMPUSDT,COMP,defi,High-liquidity DeFi lending asset.
+56,SNXUSDT,SNX,defi,High-liquidity derivatives DeFi asset.
+57,CRVUSDT,CRV,defi,High-liquidity DeFi asset.
+58,1INCHUSDT,1INCH,defi,High-liquidity DeFi aggregator asset.
+59,CAKEUSDT,CAKE,defi,High-liquidity DeFi exchange asset.
+60,THETAUSDT,THETA,media_infra,High-liquidity media infrastructure asset.
+61,EOSUSDT,EOS,legacy_layer1,Legacy layer-1 asset.
+62,ZECUSDT,ZEC,privacy,Legacy privacy asset.
+63,DASHUSDT,DASH,legacy_payment,Legacy payments asset.
+64,MINAUSDT,MINA,layer1,Layer-1 asset.
+65,KAVAUSDT,KAVA,layer1,Layer-1 asset.
+66,ROSEUSDT,ROSE,privacy_compute,Privacy/compute asset.
+67,CELOUSDT,CELO,layer1,Layer-1 payments asset.
+68,IOTAUSDT,IOTA,iot,IoT themed asset.
+69,QTUMUSDT,QTUM,legacy_layer1,Legacy layer-1 asset.
+70,ZILUSDT,ZIL,layer1,Layer-1 asset.
+71,ANKRUSDT,ANKR,infrastructure,Infrastructure asset.
+72,BATUSDT,BAT,consumer,Consumer/web asset.
+73,ENJUSDT,ENJ,gaming,Gaming asset.
+74,ONEUSDT,ONE,layer1,Layer-1 asset.
+75,IOSTUSDT,IOST,layer1,Layer-1 asset.

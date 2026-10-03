@@ -1,0 +1,18 @@
+freeze_id,rule_id,rule_value,status
+phase43-locked-holdout-freeze-v1,preferred_holdout,external_asset_holdout,locked_unobserved
+phase43-locked-holdout-freeze-v1,source_universe,configs/crypto_universe_candidates.csv,prewritten_selection_source
+phase43-locked-holdout-freeze-v1,selection_rule,"Select the next pre-ranked quality-eligible USDT spot assets not included in asset_universe_crypto20.csv after ingestion and quality checks, without inspecting model outcomes.",mandatory
+phase43-locked-holdout-freeze-v1,minimum_assets,10,mandatory
+phase43-locked-holdout-freeze-v1,fallback_holdout,future_temporal_holdout_strictly_after_crypto20_development_endpoint,fallback_only
+phase43-locked-holdout-freeze-v1,fallback_rule,"Use only data strictly after 2026-06-15 02:30 Asia/Kolkata, collected and hashed before any model outcome inspection.",fallback_only
+phase43-locked-holdout-freeze-v1,minimum_hourly_bars,12000,quality_gate
+phase43-locked-holdout-freeze-v1,maximum_gap_hours,6,quality_gate
+phase43-locked-holdout-freeze-v1,stable_or_synthetic_assets_forbidden,True,quality_gate
+phase43-locked-holdout-freeze-v1,coverage_and_hash_manifest_required,True,quality_gate
+phase43-locked-holdout-freeze-v1,validation,same repaired common-calendar purged walk-forward protocol,locked_protocol
+phase43-locked-holdout-freeze-v1,target,tb_label_8h,locked_protocol
+phase43-locked-holdout-freeze-v1,horizon_hours,8,locked_protocol
+phase43-locked-holdout-freeze-v1,transaction_cost_bps,10,locked_protocol
+phase43-locked-holdout-freeze-v1,candidate_selection_on_holdout,forbidden,forbidden
+phase43-locked-holdout-freeze-v1,threshold_selection_on_holdout,forbidden,forbidden
+phase43-locked-holdout-freeze-v1,rerun_after_failure,forbidden,forbidden

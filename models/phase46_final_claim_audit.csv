@@ -1,0 +1,5 @@
+claim_id,status,safe_wording,blocked_wording
+limited_locked_relative_support,satisfied,The frozen guided-HMM candidate satisfies the prewritten locked relative IC/Sharpe rule versus the two primary references.,The method broadly dominates all baselines.
+positive_tradable_alpha,not_supported,Positive tradable alpha is not supported because locked Sharpe=-0.3691 and locked total return=-6.6%.,The strategy is profitable or deployable.
+same_holdout_retuning,forbidden,The same locked holdout cannot be reused for model rescue.,"Tune thresholds, labels, features, architecture, or candidate choice on the spent holdout."
+artifact_availability,not_claimed,Artifacts are functional and documented; persistent artifact availability is deferred until DOI/archive exists.,Claim ACM artifact availability before a DOI or persistent archive exists.

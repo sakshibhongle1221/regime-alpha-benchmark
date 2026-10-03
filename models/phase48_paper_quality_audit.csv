@@ -1,0 +1,7 @@
+check_id,status,detail
+anonymous_review_mode,pass,Anonymous ACM review class is present.
+claim_boundaries,pass,blocked_claims=3; forbidden_found=[]
+locked_holdout_boundary,pass,Same-holdout rescue is blocked in manuscript text.
+candidate_switching_boundary,pass,Candidate switching boundary is explicit.
+negative_result_framing,pass,Paper frames result as limited/negative rather than deployable alpha.
+pdf_warning_state_recorded,pass,Warning audit is present.

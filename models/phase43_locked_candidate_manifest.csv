@@ -1,0 +1,21 @@
+freeze_id,item_type,name,status,role,notes
+phase43-locked-holdout-freeze-v1,final_candidate,regime_lgbm_hmm_guided_hmm,frozen,primary locked-holdout candidate,This is the originally proposed mechanism path. It is frozen for confirmatory testing even though repaired development evidence is weak/inconclusive.
+phase43-locked-holdout-freeze-v1,primary_reference,global_lgbm,frozen,primary comparison,Must be evaluated on the same locked holdout protocol.
+phase43-locked-holdout-freeze-v1,primary_reference,regime_lgbm_hmm,frozen,primary comparison,Must be evaluated on the same locked holdout protocol.
+phase43-locked-holdout-freeze-v1,secondary_diagnostic_reference,regime_lgbm_kmeans,frozen,secondary diagnostic comparison,May contextualize the result but does not define the primary success condition.
+phase43-locked-holdout-freeze-v1,secondary_diagnostic_reference,regime_lgbm_vol_bucket,frozen,secondary diagnostic comparison,May contextualize the result but does not define the primary success condition.
+phase43-locked-holdout-freeze-v1,secondary_diagnostic_reference,regime_lgbm_hmm_guided_gmm,frozen,secondary diagnostic comparison,May contextualize the result but does not define the primary success condition.
+phase43-locked-holdout-freeze-v1,excluded_rescue_path,phase41b_probability_calibration,excluded,forbidden before locked evaluation,Excluded to prevent post-development result chasing.
+phase43-locked-holdout-freeze-v1,excluded_rescue_path,phase41b_soft_gating,excluded,forbidden before locked evaluation,Excluded to prevent post-development result chasing.
+phase43-locked-holdout-freeze-v1,excluded_rescue_path,score_threshold_execution_control,excluded,forbidden before locked evaluation,Excluded to prevent post-development result chasing.
+phase43-locked-holdout-freeze-v1,excluded_rescue_path,new_architecture_search,excluded,forbidden before locked evaluation,Excluded to prevent post-development result chasing.
+phase43-locked-holdout-freeze-v1,excluded_rescue_path,new_feature_selection,excluded,forbidden before locked evaluation,Excluded to prevent post-development result chasing.
+phase43-locked-holdout-freeze-v1,excluded_rescue_path,new_label_or_horizon_selection,excluded,forbidden before locked evaluation,Excluded to prevent post-development result chasing.
+phase43-locked-holdout-freeze-v1,support_artifact_hash,configs\phase43_locked_holdout_freeze_v1.json,hashed,phase43a_freeze_support,37cd6be0a8aea99cb58b3db0271254721046d006a08a5a395a4efbfb13f8edd0
+phase43-locked-holdout-freeze-v1,support_artifact_hash,models\crypto20_repaired_fold_local_experiment_results.csv,hashed,phase43a_freeze_support,223c70ef2961205536cec3aeddb60b34075428535a9c1d5a7cb3092887f06e0e
+phase43-locked-holdout-freeze-v1,support_artifact_hash,models\crypto20_repaired_fold_local_statistical_claims.csv,hashed,phase43a_freeze_support,3fa5a84d5302bc4b6f731275bf246462546567f3606f692bfc7080b118696411
+phase43-locked-holdout-freeze-v1,support_artifact_hash,reports\phase40_repaired_statistical_adjudication.md,hashed,phase43a_freeze_support,a84c4eac2e6e55c6d9c443fdc9bd7872534aacfde762797c55db9d4c6f56ca00
+phase43-locked-holdout-freeze-v1,support_artifact_hash,reports\phase42_interpretation_execution_hardening.md,hashed,phase43a_freeze_support,dbb94f86e7dc85bb158c760e7db1c68e4c77bf8905fe18ccad91c4d78f772279
+phase43-locked-holdout-freeze-v1,support_artifact_hash,models\crypto20_development_freeze_manifest.json,hashed,phase43a_freeze_support,9bf0109f6ad9c8e13f8e8c3e4eab8fac134ad6ef7648f225f0d22db8f771923b
+phase43-locked-holdout-freeze-v1,support_artifact_hash,models\phase42_execution_stress_summary.csv,hashed,phase43a_freeze_support,dfc5a0873be8551a27681bb147b9e3e18f7372ec9fe8403075af874aa79cb764
+phase43-locked-holdout-freeze-v1,support_artifact_hash,models\phase42_cross_asset_alpha_diagnostics.csv,hashed,phase43a_freeze_support,a1f5e87637037a3987c506527e686d21cf32070bd4f81b56e15f340231871bc5

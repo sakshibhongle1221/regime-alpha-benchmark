@@ -1,0 +1,5 @@
+figure_id,title,source_artifact,phase47_status,action
+F1,Validation protocol: Show invalidated positional folds versus repaired common-calendar fold-local design.,reports/phase39r_neural_fold_local_results.md,needs_final_drawing,Draw compact publication figure or keep as table if page budget is tight.
+F2,"System overview: Diagram features, HMM weak labels, contrastive encoder, regime assignment, and downstream LightGBM.",reports/phase44_paper_readiness_package.md,needs_final_drawing,Draw compact publication figure or keep as table if page budget is tight.
+F3,Locked result: Plot candidate versus primary references on mean asset IC and Sharpe.,models/phase43b_locked_external_primary_comparison.csv,ready_from_existing_artifacts,Draw compact publication figure or keep as table if page budget is tight.
+F4,Mechanism boundary: Show execution sensitivity and why the result is not a tradable-alpha claim.,models/phase42_execution_stress_summary.csv,ready_from_existing_artifacts,Draw compact publication figure or keep as table if page budget is tight.

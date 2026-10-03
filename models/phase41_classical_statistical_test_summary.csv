@@ -1,0 +1,19 @@
+comparison,metric,mean_difference,direction,significance,paired_t_p_value,dm_p_value,n_paired_folds,n_paired_rows
+regime_lgbm_hmm vs global_lgbm,IC,0.00030483895063984634,method_better,not_significant,0.9469935339668047,,16.0,
+regime_lgbm_hmm vs global_lgbm,Sharpe,-0.6984270807401118,reference_better,not_significant,0.1858252765540298,,16.0,
+regime_lgbm_hmm vs global_lgbm,nll_loss,0.0005219896567559779,reference_better,not_significant,,0.5301928296863404,,230400.0
+regime_lgbm_kmeans vs global_lgbm,IC,-0.0032179653385543683,reference_better,not_significant,0.3473446347187552,,16.0,
+regime_lgbm_kmeans vs global_lgbm,Sharpe,-0.43363138974988635,reference_better,not_significant,0.40155750959209985,,16.0,
+regime_lgbm_kmeans vs global_lgbm,nll_loss,0.0008271871222711853,reference_better,not_significant,,0.3196163953526439,,230400.0
+regime_lgbm_vol_bucket vs global_lgbm,IC,-0.001634268785316684,reference_better,not_significant,0.7758981162613334,,16.0,
+regime_lgbm_vol_bucket vs global_lgbm,Sharpe,-0.5654440377640437,reference_better,not_significant,0.4559971413441442,,16.0,
+regime_lgbm_vol_bucket vs global_lgbm,nll_loss,0.003268931859101305,reference_better,p<0.01,,0.0017640963284050104,,230400.0
+regime_lgbm_kmeans vs regime_lgbm_hmm,IC,-0.0035228042891942138,reference_better,not_significant,0.34554631483241893,,16.0,
+regime_lgbm_kmeans vs regime_lgbm_hmm,Sharpe,0.26479569099022554,method_better,not_significant,0.6383559483106406,,16.0,
+regime_lgbm_kmeans vs regime_lgbm_hmm,nll_loss,0.00030519746551520727,reference_better,not_significant,,0.4414568139613084,,230400.0
+regime_lgbm_vol_bucket vs regime_lgbm_hmm,IC,-0.0019391077359565308,reference_better,not_significant,0.6631246813968009,,16.0,
+regime_lgbm_vol_bucket vs regime_lgbm_hmm,Sharpe,0.13298304297606822,method_better,not_significant,0.8327948515039835,,16.0,
+regime_lgbm_vol_bucket vs regime_lgbm_hmm,nll_loss,0.002746942202345327,reference_better,p<0.01,,0.0007043318816631911,,230400.0
+regime_lgbm_vol_bucket vs regime_lgbm_kmeans,IC,0.0015836965532376843,method_better,not_significant,0.7192184739113471,,16.0,
+regime_lgbm_vol_bucket vs regime_lgbm_kmeans,Sharpe,-0.13181264801415732,reference_better,not_significant,0.8613828606895837,,16.0,
+regime_lgbm_vol_bucket vs regime_lgbm_kmeans,nll_loss,0.00244174473683012,reference_better,p<0.01,,0.004488939180999296,,230400.0

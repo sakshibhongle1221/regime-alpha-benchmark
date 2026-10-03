@@ -1,0 +1,34 @@
+experiment_id,phase_family,scope,method_family,selection_role,outcome_inspected,paper_role,status,next_action
+pilot_classical_regimes,4-13,BTC_ETH,"HMM; KMeans; volatility bucket",development,true,baseline,complete,retain
+pilot_global_alpha,4-13,BTC_ETH,global LightGBM,development,true,baseline,complete,retain
+pilot_vanilla_contrastive,6-16,BTC_ETH,"contrastive GMM; contrastive HMM",development,true,mechanism,complete,retain
+pilot_robustness,14A-14B,BTC_ETH,"symbol; horizon; cost; threshold; period",development,true,robustness,complete,retain
+pilot_statistics,15A-15B,BTC_ETH,"paired folds; correction; PSR",development,true,evidence control,complete,retain
+pilot_regime_quality,16,BTC_ETH,structural regime diagnostics,development,true,mechanism,complete,retain
+guided_smoke,18,BTC_ETH,HMM-guided contrastive smoke,development,true,prototype,complete,retain as development
+guided_full,19B,BTC_ETH,HMM-guided contrastive full run,development,true,proposed method,complete,retain as development
+guided_alpha,20,BTC_ETH,"guided GMM; guided HMM",development,true,main result,complete,retain as development
+guided_stress,21,BTC_ETH,guided robustness refresh,development,true,robustness,complete,retain as development
+time_frequency_prototype,22A,BTC_ETH,time-frequency guided encoder,development,true,negative ablation,complete,do not expand automatically
+pilot_interpretability,23,BTC_ETH,fold-local alpha attribution,development,true,interpretability,complete,retain diagnostically
+minimal_ablation,25,BTC_ETH,"objective; assignment; augmentation",development,true,mechanism,complete,retain
+paper_claim_tests,26,BTC_ETH,claim-level statistical mapping,development,true,evidence control,complete,retain
+crypto20_universe,31,Crypto20_Crypto50,pre-specified universe design,development,true,data protocol,complete,retain
+crypto20_pipeline,32,Crypto20,"ingestion; features; targets; quality gate",development,true,data quality,complete,retain
+crypto20_classical,33,Crypto20,"HMM; KMeans; volatility bucket",development,true,baseline,complete,retain
+crypto20_guided_readiness,34,Crypto20,guided compute gate,development,true,scope control,complete,retain
+crypto20_guided_structure,35,Crypto20,"guided GMM; guided HMM",development,true,structural transfer,complete,retain as development
+crypto20_alpha,36,Crypto20,"global; classical; guided",development,true,predictive generalization,complete,retain as development
+crypto20_statistics,37,Crypto20,"paired folds; time-block NLL; asset heterogeneity",development,true,statistical adjudication,complete,freeze artifacts
+fold_local_encoder_baseline,39,Crypto20,full baseline ladder,development,true,validity repair,complete,preserve full negative/inconclusive result; predictive H8 not supported
+calibrated_soft_gating,40,Crypto20,"calibration; soft gating; pooled experts",development,false,candidate improvement,complete,Phase 41B controlled negative result
+locked_holdout_freeze,43A,Locked_asset_holdout,"frozen guided-HMM candidate; no calibration or threshold rescue",final_locked,false,protocol freeze,complete,ready for holdout registration
+locked_holdout_registration,43B-register,Locked_asset_holdout,coverage and hash registration,locked_unobserved,false,data readiness,complete,10 external assets registered before outcome inspection
+external_asset_confirmation,43B-eval,Locked_asset_holdout,frozen selected candidate,final_locked,true,confirmatory result,complete,relative IC/Sharpe support satisfied; tradable positive-alpha claim not supported
+paper_readiness_package,44,Publication package,repaired and locked evidence,paper_facing,false,claim packaging,complete,manuscript evidence matrix and submission risk register generated without model rescue
+venue_manuscript_package,45,Publication package,Phase 44 paper evidence,paper_facing,false,venue packaging,complete,venue-ready manuscript source plus table/figure/reproducibility/claim maps and ICAIF/ACM venue audit generated without model rescue
+final_research_completion,46,Publication package,Phase 45 venue package,paper_facing,false,final research completion,complete,final repository evidence package and submission gate generated without model rescue; external submission still needs PDF/citation/figure/anonymity/archive pass
+submission_manuscript_build,47,Publication package,Phase 46 final research package,paper_facing,false,submission build hardening,complete,anonymous LaTeX draft/reference/compiled-PDF/build-audit/table-figure/anonymity/gap-list package generated without model rescue; external submission still needs venue-template warning citation figure PDF-anonymity archive and human review
+review_ready_paper_polish,48,Publication package,Phase 47 compiled draft package,paper_facing,false,review-ready manuscript polish,complete,polished anonymous LaTeX source/reference/compiled-PDF/claim-trace/warning-audit/reviewer-guide package generated without model rescue; external submission still needs final venue-template PDF-metadata anonymity archive and human review
+final_submission_closure,49,Publication package,Phase 48 review-ready manuscript package,paper_facing,false,final submission closure,complete,final F1/F2 figures citation expansion compiled submission-ready source/PDF metadata audit LaTeX warning-state audit and artifact DOI boundary generated without model rescue; external submission still needs human/advisor visual review venue-template verification and DOI/archive decision
+future_temporal_confirmation,journal_extension,Future_data,frozen selected candidate,final_locked,false,temporal generalization,blocked,requires future collection

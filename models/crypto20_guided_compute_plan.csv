@@ -1,0 +1,5 @@
+scenario,symbols,eligible_windows,batch_size,epochs,batches_per_epoch,step_seconds_source,estimated_epoch_minutes,estimated_train_hours,max_train_hours,decision
+full_crypto20_guided_encoder,20,348606,128,30,2724,phase17_measured_step_seconds,33.53946428796684,16.76973214398342,24.0,run_full
+stratified_prototype_50000_windows,20,50000,128,5,391,phase17_measured_step_seconds,4.8142182586619064,0.4011848548884922,24.0,run_first
+stratified_prototype_100000_windows,20,100000,128,5,782,phase17_measured_step_seconds,9.628436517323813,0.8023697097769844,24.0,run_first
+stratified_prototype_150000_windows,20,150000,128,5,1172,phase17_measured_step_seconds,14.430342197319066,1.2025285164432555,24.0,run_first

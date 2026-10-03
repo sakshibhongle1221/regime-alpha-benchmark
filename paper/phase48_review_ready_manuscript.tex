@@ -1,0 +1,115 @@
+\documentclass[sigconf,anonymous,review]{acmart}
+
+\settopmatter{printfolios=true,printccs=false,printacmref=true}
+\acmConference[Anonymous Review]{Anonymous Review}{2026}{}
+\acmYear{2026}
+\acmISBN{}
+\acmDOI{}
+
+\usepackage{array}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\title{Leakage-Safe Regime-Conditioned Crypto Alpha Evaluation with HMM-Guided Contrastive Representations}
+
+\begin{document}
+
+\begin{abstract}
+Regime-conditioned financial machine learning can look compelling when latent-state labels accidentally encode validation artifacts. This paper studies HMM-guided contrastive regime learning for multi-asset crypto alpha evaluation under a deliberately leakage-safe protocol. The central contribution is not a profitable trading rule; it is a complete validation repair and claim-control path. An initially positive positional-fold result is retained only as audit history after discovering cross-asset calendar overlap. The benchmark is then rebuilt with common-calendar fold-local scaling, HMM fitting, pair construction, encoder training, regime assignment, and downstream LightGBM fitting. A single guided-HMM candidate is frozen before a registered 10-asset external holdout is evaluated once. On that locked holdout, the frozen candidate improves mean asset IC over global LightGBM (0.0007 vs. -0.0042) and raw-feature HMM (0.0007 vs. -0.0024), with non-worse Sharpe than both references (-0.369 vs. -1.281 and -0.954). However, its Sharpe and total return remain negative (-0.369, -6.6\%). The paper therefore supports only a limited locked relative mechanism claim and explicitly blocks profitable-alpha, deployment, candidate-switching, and same-holdout rescue claims.
+\end{abstract}
+
+\keywords{financial machine learning, crypto assets, hidden Markov models, contrastive learning, leakage-safe validation, negative results}
+
+\maketitle
+
+\section{Introduction}
+Backtests in financial machine learning are unusually vulnerable to validation mistakes because labels overlap in time, assets share market-wide shocks, and small protocol choices can dominate model differences. Regime-conditioned models add another layer of risk: latent regimes can become attractive post-hoc explanations even when the validation split is flawed.
+
+This paper evaluates a concrete regime-learning pipeline while making the validation audit part of the contribution. The original development result appeared directionally favorable for HMM-guided regimes, but a later audit found that per-symbol positional folds overlapped in calendar time across assets. That result is not used as predictive evidence. It is retained only to document the failure mode. The repaired protocol uses common-calendar fold-local validation and later spends a single registered locked external holdout.
+
+The paper asks a narrower question than whether the system is profitable: does sequentially guided representation learning produce regimes that satisfy a prewritten relative IC/Sharpe rule against global and raw-HMM baselines under leakage-safe validation? The answer is mixed. The frozen guided-HMM candidate satisfies that limited locked relative rule, but locked Sharpe and total return remain negative. The scientific result is therefore a mechanism boundary and a reproducible validation discipline, not a trading claim.
+
+\section{Related Work}
+The evaluation combines financial ML validation, regime-switching models, contrastive representation learning, and tabular boosting baselines. Leakage-safe financial validation is critical because neighboring observations and overlapping outcomes can create optimistic estimates \cite{lopezdeprado2018afml}. Classical HMM and regime-switching models provide temporally persistent latent states \cite{hamilton1989regime,rabiner1989hmm}. Contrastive learning provides a representation objective for learning invariances and predictive structure from sequences \cite{oord2018cpc,chen2020simclr}. LightGBM remains a strong tabular learner and is used here as the downstream alpha model across all regime families \cite{lightgbm2017}.
+
+\section{Data and Validation Protocol}
+The development universe is Crypto-20; the locked external holdout contains ten additional assets selected and frozen before outcome inspection. The target is the same eight-hour triple-barrier-style label used throughout the repaired project. The locked holdout has 18 folds and 129,600 out-of-sample rows per method.
+
+The validation rule is common-calendar and fold-local. Inside each fold, scaling, weak-supervision HMM fitting, pair construction, encoder training, regime assignment, and downstream LightGBM fitting use only the training window. This prevents the cross-asset calendar overlap that invalidated the earlier positional-fold run.
+
+\begin{table*}[t]
+\caption{Evidence roles and allowed claim boundaries. Development evidence can explain mechanisms; locked evidence controls final claims.}
+\label{tab:evidence-boundaries}
+\small
+\begin{tabularx}{\textwidth}{p{0.25\textwidth}p{0.20\textwidth}Y}
+\toprule
+Evidence block & Role & Claim boundary \\
+\midrule
+validation\_repair & development\_observed & Do not cite invalidated positional-fold runs as predictive evidence. \\
+repaired\_crypto20\_development & development\_observed & Development results motivate interpretation, not final-test confirmation. \\
+development\_statistical\_adjudication & development\_observed & No corrected dominance or robust positive-alpha claim. \\
+execution\_and\_mechanism\_diagnostics & development\_observed & Diagnostics explain fragility; they are not a new tuned model. \\
+locked\_external\_holdout & locked\_registered\_unobserved & Tradable-alpha claim is not\_supported; no candidate switching or same-holdout retuning. \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+\section{Methods}
+All methods share the same features, target, transaction-cost assumption, walk-forward structure, and downstream learner class. The compared regimes are global LightGBM, raw-feature HMM, KMeans, volatility buckets, vanilla contrastive, contrastive-HMM, HMM-guided GMM, and HMM-guided HMM.
+
+The frozen final candidate is the HMM-guided contrastive-HMM representation followed by regime-conditioned LightGBM. HMM states are treated as weak sequential supervision rather than ground-truth market labels. The higher-IC guided-GMM row is reported as a diagnostic comparator only; it cannot replace the frozen candidate after the locked holdout is observed.
+
+\section{Results}
+Table~\ref{tab:locked-results} reports the locked external holdout. The frozen guided-HMM candidate has mean asset IC 0.0007, Sharpe -0.369, and total return -6.6\%. Table~\ref{tab:primary-rule} shows the exact prewritten primary comparison: the candidate improves mean asset IC and has non-worse Sharpe against global LightGBM and raw-feature HMM with equal coverage.
+
+\begin{table}[t]
+\caption{Locked external holdout performance. All methods have 129,600 rows.}
+\label{tab:locked-results}
+\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Method & IC & Sharpe & Return & DD \\
+\midrule
+Guided-HMM LGBM & 0.0007 & -0.369 & -6.6\% & -11.4\% \\
+Guided-GMM LGBM & 0.0072 & -1.704 & -27.2\% & -29.4\% \\
+Raw-HMM LGBM & -0.0024 & -0.954 & -16.0\% & -18.0\% \\
+Global LGBM & -0.0042 & -1.281 & -16.4\% & -16.7\% \\
+Contrastive-GMM LGBM & -0.0002 & 0.273 & 3.6\% & -9.9\% \\
+Contrastive-HMM LGBM & -0.0012 & -0.728 & -10.9\% & -15.4\% \\
+KMeans LGBM & -0.0020 & -0.300 & -5.5\% & -13.8\% \\
+Vol-bucket LGBM & -0.0017 & -0.642 & -11.1\% & -18.3\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\caption{Prewritten primary rule for the frozen candidate.}
+\label{tab:primary-rule}
+\small
+\begin{tabular}{lrrc}
+\toprule
+Reference & $\Delta$IC & $\Delta$Sharpe & Equal \\
+\midrule
+Global LGBM & 0.0049 & 0.912 & yes \\
+Raw-HMM LGBM & 0.0031 & 0.585 & yes \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The result should not be overstated. A vanilla contrastive row has positive locked Sharpe (0.273) and positive total return (3.6\%), but it is not the frozen final candidate and is not part of the prewritten guided-HMM mechanism claim. Switching to it after seeing the locked holdout would be post-hoc model selection. If a reader asks whether this paper presents a deployable trading strategy, it does not make that claim.
+
+\section{Discussion and Limitations}
+The strongest interpretation is that HMM-guided contrastive learning can produce limited relative signal structure under strict validation, but that structure does not automatically become a deployable trading edge. The locked candidate's negative Sharpe and total return block any profitability or deployment claim. The positive contribution is the research process: an attractive result was invalidated, the protocol was repaired, a candidate was frozen, one locked holdout was spent, and the claim was bounded.
+
+Limitations include a crypto-only universe, weak proxy regime labels, overlapping financial outcomes, one spent locked holdout, and incomplete external artifact archival. Future improvements must use development-only evidence or a newly registered confirmatory test. The locked holdout used here cannot be reused for model rescue.
+
+\section{Reproducibility and Artifact Status}
+The repository contains phase scripts, curated result tables, claim-control reports, and a research-grade regression gate. Bulky row-level predictions and raw data are excluded when they are too large or reproducible. Artifact availability is not claimed until a permanent archive or DOI exists. The current manuscript is anonymous-review oriented and still requires final venue-template verification, PDF metadata review, and human/advisor review before external submission.
+
+\section{Conclusion}
+Under leakage-safe validation, the frozen guided-HMM regime learner earns limited locked relative IC/Sharpe support but not profitable-alpha support. The paper's contribution is a transparent benchmark and claim-control workflow for separating real evidence from validation artifacts in regime-conditioned crypto alpha research.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{phase48_references}
+
+\end{document}

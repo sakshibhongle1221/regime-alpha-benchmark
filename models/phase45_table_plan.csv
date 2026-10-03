@@ -1,0 +1,7 @@
+table_id,paper_section,artifact,purpose,status
+T1,Data and validation,reports/phase43b_locked_holdout_data_freeze.md,Describe development versus locked-holdout data roles without exposing row-level final predictions.,ready_from_existing_artifacts
+T2,Benchmark design,reports/paper_artifact_map.csv,List methods and explain equal-coverage evaluation.,ready_from_existing_artifacts
+T3,Repaired development evidence,models/crypto20_repaired_fold_local_statistical_method_summary.csv,Show weak development-observed evidence and uncertainty intervals.,ready_from_existing_artifacts
+T4,Locked external holdout,models/phase43b_locked_external_experiment_results.csv,Show the one-shot locked method comparison.,ready_from_existing_artifacts
+T5,Claim adjudication,models/phase43b_locked_external_claims.csv,Separate limited locked relative support from blocked tradable-alpha claims.,ready_from_existing_artifacts
+T6,Reproducibility appendix,models/research_grade_check_report.md,Report regression gate coverage and test status.,ready_from_existing_artifacts

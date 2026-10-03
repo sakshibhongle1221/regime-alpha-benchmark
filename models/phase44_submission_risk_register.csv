@@ -1,0 +1,7 @@
+risk,severity,mitigation,owner_artifact
+Overclaiming profitability,critical,Phase 43B explicitly marks positive tradable alpha as not_supported.,models/phase43b_locked_external_claims.csv
+Switching from frozen final candidate to higher-IC diagnostic method,critical,Candidate switching after holdout is forbidden; guided-GMM cannot replace guided-HMM after seeing locked outcomes.,reports/phase43b_locked_external_adjudication.md
+Reintroducing calendar leakage,critical,Common-calendar fold-local validation and research-grade checks must pass before push.,models/research_grade_check_report.md
+Treating development evidence as final test evidence,high,Data-role language separates development_observed from locked_registered_unobserved.,reports/data_role_registry.csv; reports/publication_acceptance_gates.md
+Weak/negative result framed as failure instead of contribution,medium,"Paper thesis focuses on validation, mechanism boundaries, and limited locked relative support.",reports/phase44_paper_readiness_package.md
+Venue formatting and citations incomplete,medium,Next phase should convert Markdown to target venue template and finalize related work.,paper/main.md; reports/paper_submission_checklist.md

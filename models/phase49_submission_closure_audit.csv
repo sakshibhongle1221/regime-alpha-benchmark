@@ -1,0 +1,7 @@
+check_id,status,detail
+figures_f1_f2_generated,pass,"figures=['ready_for_visual_review', 'ready_for_visual_review']"
+citation_expansion,pass,rows=11
+metadata_anonymity,pass,"PDF metadata scanned for personal names, local paths, and repository links."
+artifact_availability_boundary,pass,Artifact DOI remains a human release step before availability claims.
+latex_warning_state_recorded,pass,"latex_warnings={'pdf_compilation': 'pass', 'build_logs_available': 'pass', 'page_budget': 'pass', 'warning_cleanup': 'review_required'}"
+no_model_or_locked_data_change,pass,"Phase 49 changes manuscript, figures, metadata audit, and checklist only."

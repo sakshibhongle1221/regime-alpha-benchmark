@@ -1,0 +1,9 @@
+metric,value,unit,notes
+training_windows,34798,windows,Sliding windows across selected symbols.
+batches_per_epoch,271,batches,Uses drop-last batching to match train_encoder.py.
+single_encoder_train,100.1,minutes,Estimated from synthetic forward/backward timing.
+initial_12_run_ablation,21.62,hours,3 losses x 2 augmentations x 2 assignment methods.
+recommended_initial_runs,12,runs,Cap under a 24 hour local budget.
+budget_status,green,status,"Green <= budget, yellow <= 2x budget, red > 2x budget."
+BTCUSDT_feature_rows,17460,rows,2024-04-29 04:30:00+05:30 to 2026-04-26 15:30:00+05:30
+ETHUSDT_feature_rows,17460,rows,2024-04-29 04:30:00+05:30 to 2026-04-26 15:30:00+05:30

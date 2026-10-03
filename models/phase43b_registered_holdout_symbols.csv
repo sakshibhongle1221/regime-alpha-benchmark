@@ -1,0 +1,11 @@
+registration_id,data_role,design_rank,symbol,base_asset,universe_group,ohlcv_rows,feature_rows,target_rows,ohlcv_earliest,ohlcv_latest,median_quote_volume,median_range_proxy,max_gap_hours
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,21,FILUSDT,FIL,storage,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,524236.028895,0.01119402985074626,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,22,ARBUSDT,ARB,layer2,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,786968.335625,0.012130874867662778,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,23,OPUSDT,OP,layer2,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,483812.88555,0.013038872224152592,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,24,INJUSDT,INJ,defi,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,389751.9596,0.013976472941091661,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,25,ATOMUSDT,ATOM,layer1,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,240868.9818,0.009868258961968407,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,26,XLMUSDT,XLM,payment,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,448982.09445,0.009796878103315195,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,27,ALGOUSDT,ALGO,layer1,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,203383.15045000002,0.011629956308252358,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,28,AAVEUSDT,AAVE,defi,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,933957.609695,0.012269265119285326,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,30,RUNEUSDT,RUNE,defi,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,418163.2708,0.011306016999564909,1.0
+phase43b-locked-holdout-registration-v1,locked_unobserved_registration_only,31,FETUSDT,FET,ai_data,17520,17460,17436,2024-06-30 12:30:00+05:30,2026-06-30 11:30:00+05:30,816272.671555,0.0152284263959391,1.0

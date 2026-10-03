@@ -1,0 +1,28 @@
+{
+  "data_role": "locked_registered_unobserved",
+  "embargo_bars": 120,
+  "experiment_data_sha256": "3d09fa74881cf04edb472f6706b2b94b23237b547ef1261ac737b7481ed4dc36",
+  "fold_count": 18,
+  "freeze_id": "phase43b-locked-external-holdout-v1",
+  "initial_train_bars": 4320,
+  "label_horizon_bars": 8,
+  "prediction_rows": 173770,
+  "primary_return": "forward_return_8h",
+  "primary_target": "tb_label_8h",
+  "registration_id": "phase43b-locked-holdout-registration-v1",
+  "schema_version": 1,
+  "step_bars": 720,
+  "symbols": [
+    "FILUSDT",
+    "ARBUSDT",
+    "OPUSDT",
+    "INJUSDT",
+    "ATOMUSDT",
+    "XLMUSDT",
+    "ALGOUSDT",
+    "AAVEUSDT",
+    "RUNEUSDT",
+    "FETUSDT"
+  ],
+  "window_size": 60
+}

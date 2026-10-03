@@ -1,0 +1,6 @@
+method,source_phase,n_rows,n_symbols,n_regimes,avg_regime_duration,transition_diagonal_probability,mean_confidence,hmm_reference_nmi,hmm_reference_ari,hmm_reference_purity,hmm_nmi_vs_contrastive_delta,hmm_purity_vs_contrastive_delta
+hmm_guided_hmm,phase35_crypto20_guided_encoder,348606,20,4,9.093812687247622,0.8900861204540376,0.994881881460661,0.6938376719084844,0.6269680913269076,0.8140651623896319,,
+hmm_guided_gmm,phase35_crypto20_guided_encoder,348606,20,4,9.05230673478385,0.889581888920085,0.9958850271930161,0.5058280252005763,0.38366352185584335,0.720509687153979,,
+hmm,phase33_crypto20_classical_regime_benchmark,349786,20,4,12.710708964715288,,,,,,,
+kmeans,phase33_crypto20_classical_regime_benchmark,349786,20,4,4.427222559740786,,,,,,,
+vol_bucket,phase33_crypto20_classical_regime_benchmark,349786,20,4,10.686361969937677,,,,,,,

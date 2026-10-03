@@ -1,0 +1,3 @@
+figure_id,title,svg_path,pdf_path,png_preview_path,status
+F1,Validation repair: invalidated positional folds versus repaired common-calendar folds,paper/figures/phase49_f1_validation_repair.svg,paper/figures/phase49_f1_validation_repair.pdf,paper/figures/phase49_f1_validation_repair.png,ready_for_visual_review
+F2,"System overview: features, HMM weak labels, encoder, regime assignment, LightGBM",paper/figures/phase49_f2_system_overview.svg,paper/figures/phase49_f2_system_overview.pdf,paper/figures/phase49_f2_system_overview.png,ready_for_visual_review

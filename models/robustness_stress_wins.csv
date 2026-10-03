@@ -1,0 +1,16 @@
+metric,method,wins
+signal_IC,regime_lgbm_hmm_guided_hmm,30
+signal_IC,regime_lgbm_kmeans,6
+signal_IC,regime_lgbm_contrastive_hmm,6
+signal_IC,regime_lgbm_contrastive,3
+signal_IC,global_lgbm,3
+Sharpe,regime_lgbm_hmm_guided_hmm,36
+Sharpe,regime_lgbm_kmeans,7
+Sharpe,global_lgbm,5
+drawdown,regime_lgbm_hmm_guided_hmm,28
+drawdown,global_lgbm,14
+drawdown,regime_lgbm_kmeans,3
+drawdown,regime_lgbm_contrastive_hmm,3
+total_return,regime_lgbm_hmm_guided_hmm,34
+total_return,regime_lgbm_kmeans,7
+total_return,global_lgbm,7

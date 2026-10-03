@@ -1,0 +1,23 @@
+check,status,severity,rows_checked,rows_failed,detail
+regime_discovery_protocol,WARN,methodological,173770,0,Legacy regime_assignments.csv is an offline/global artifact. Use walkforward_experiment_results.csv for fold-local predictive regime claims.
+experiment_results_match_predictions,PASS,critical,6,0,experiment_results.csv n_test_rows matches alpha_oos_predictions.csv.
+feature_columns_present,PASS,critical,22,0,All 22 configured feature columns exist.
+feature_source_no_obvious_future_ops,PASS,critical,0,0,No shift(-h) or centered rolling windows found in features.py.
+features_symbol_rows,PASS,critical,2,0,"features counts: BTCUSDT=17460, ETHUSDT=17460"
+fold_embargo_and_label_purge,PASS,critical,18,0,"18/18 folds satisfy row separation, 120-bar embargo, and 8-bar label-horizon purge."
+fold_local_regime_refit_artifacts,PASS,critical,6,0,"Fold-local rows by method: global_lgbm=25920, regime_lgbm_contrastive=25920, regime_lgbm_contrastive_hmm=25920, regime_lgbm_hmm=25920, regime_lgbm_kmeans=25920, regime_lgbm_vol_bucket=25920"
+joined_model_rows_are_finite,PASS,critical,34872,0,Joined feature/target rows contain no NaN/inf values.
+ohlcv_symbol_rows,PASS,critical,2,0,"ohlcv counts: BTCUSDT=17520, ETHUSDT=17520"
+oos_prediction_equal_method_coverage,PASS,critical,6,0,"Prediction rows by method: global_lgbm=25920, regime_lgbm_contrastive=25920, regime_lgbm_contrastive_hmm=25920, regime_lgbm_hmm=25920, regime_lgbm_kmeans=25920, regime_lgbm_vol_bucket=25920"
+oos_prediction_no_duplicate_method_rows,PASS,critical,155520,0,No duplicated method/symbol/feat_idx predictions.
+oos_prediction_rows_match_test_folds,PASS,critical,155520,0,All prediction rows fall inside their recorded fold test windows.
+oos_prediction_schema,PASS,critical,0,0,alpha_oos_predictions.csv has required audit columns.
+primary_target_columns_present,PASS,critical,2,0,"Primary target columns exist: ['tb_label_8h', 'forward_return_8h']."
+regime_assignment_common_coverage,PASS,critical,5,0,"Regime assignment rows by method: contrastive=34754, contrastive_hmm=34754, hmm=34754, kmeans=34754, vol_bucket=34754"
+required_tables_exist,PASS,critical,0,0,"ohlcv, features, and targets tables exist."
+robustness_matrix_artifacts,PASS,critical,54,0,"robustness rows=54, expected=54; grid_cells=9; summary_cells=9"
+robustness_stress_artifacts,PASS,critical,288,0,"stress rows=288, expected=288; stress_cells=48; summary_cells=48"
+run_registry_artifacts,PASS,critical,39,0,registered_runs=1; latest_run=20260522_phase14b_baseline; latest_artifacts=39
+target_horizon_tail_loss,PASS,critical,2,0,"BTCUSDT: feature_rows=17460, target_rows=17436, lost=24, expected_loss=24, target_latest=2026-04-25 15:30:00+05:30; ETHUSDT: feature_rows=17460, target_rows=17436, lost=24, expected_loss=24, target_latest=2026-04-25 15:30:00+05:30"
+targets_symbol_rows,PASS,critical,2,0,"targets counts: BTCUSDT=17436, ETHUSDT=17436"
+walk_forward_folds_exist,PASS,critical,18,0,"18 folds generated with initial_train, step, and embargo settings."

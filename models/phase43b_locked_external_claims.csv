@@ -1,0 +1,5 @@
+claim_id,claim_status,claim,evidence
+locked_relative_success_rule,satisfied,The frozen guided-HMM final candidate improves over both primary references on mean asset IC and has non-worse transaction-cost-adjusted Sharpe with equal coverage.,All primary comparisons satisfy IC/Sharpe/coverage requirements.
+positive_tradable_alpha,not_supported,The locked result supports a tradable positive-alpha strategy.,"Final candidate Sharpe=-0.3691, total_return=-0.0659; positive_alpha=False."
+candidate_switching_after_holdout,forbidden,A non-frozen method can replace the final candidate after locked outcome inspection.,"A secondary diagnostic method has higher locked IC, but it was not the frozen final candidate and cannot replace the final candidate after outcome inspection."
+same_holdout_retuning,forbidden,"Thresholds, features, labels, architecture, or method choice can be tuned after locked evaluation.",Phase 43A and Phase 43B forbid same-holdout tuning or rerun-after-failure.

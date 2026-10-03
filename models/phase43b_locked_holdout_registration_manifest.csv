@@ -1,0 +1,10 @@
+registration_id,parent_freeze_id,item,value,notes
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,registration_status,registered_ready,No model outcomes inspected; this is a data-membership gate only.
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,final_candidate,regime_lgbm_hmm_guided_hmm,Inherited from Phase 43A; not reselected here.
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,selected_asset_count,10,Minimum required: 10.
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,eligible_external_candidate_count,19,Count before truncating to the registered holdout size.
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,missing_assets_before_evaluation,0,"If positive, ingest/build feature/target data before evaluation."
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,selected_symbols,"FILUSDT,ARBUSDT,OPUSDT,INJUSDT,ATOMUSDT,XLMUSDT,ALGOUSDT,AAVEUSDT,RUNEUSDT,FETUSDT",Empty unless the minimum locked-holdout asset count is met.
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,selected_symbols_sha256,92106c157fd1c932d6164342069fc12281b853354717fe34311edf3f16b02a9a,Hash of ordered registered symbols.
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,candidate_quality_sha256,4311d6da3556647a5a43e69fa8fdcfa4dde073fe6309963adc426b06605fc1d0,Hash of non-outcome candidate quality state.
+phase43b-locked-holdout-registration-v1,phase43-locked-holdout-freeze-v1,forbidden_inputs_confirmed,"model_predictions,alpha_metrics,method_rankings_on_holdout,threshold_search_on_holdout,candidate_selection_on_holdout,rerun_after_failure","Registration does not read predictions, alpha metrics, or method rankings."

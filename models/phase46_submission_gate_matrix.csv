@@ -1,0 +1,11 @@
+gate,status,evidence_or_action
+venue_scope,pass,"AI+Finance, representation learning, validation/calibration, robustness, crypto/time-series fit."
+claim_control,pass,Profitable/deployable strategy claim is blocked; limited locked relative support only.
+locked_holdout_integrity,pass,Final candidate frozen before holdout; same-holdout retuning forbidden.
+research_gate,pass,Full research-grade gate must pass immediately before submission.
+double_blind,conditional_pass,No author block in generated source; Phase 46 records a final anonymity audit requirement.
+page_budget,conditional_pass,Section budget targets eight total pages; final PDF still must be measured.
+acm_template,conditional_pass,ACM/sigconf skeleton exists; final compile must use current venue template.
+artifact_functionality,pass,"Repro commands, tests, manifests, and gate reports are present."
+artifact_availability,not_claimed,No DOI/persistent archive yet; availability badge must not be claimed.
+final_submission,not_yet,"Requires final PDF, citations, figures, anonymity audit, and advisor/reviewer pass."

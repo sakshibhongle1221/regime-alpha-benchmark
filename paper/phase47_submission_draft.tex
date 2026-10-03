@@ -1,0 +1,103 @@
+\documentclass[sigconf,anonymous,review]{acmart}
+
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\acmConference[Anonymous Review]{Anonymous Review}{}{}
+\acmYear{2026}
+
+\title{HMM-Guided Contrastive Representations for Leakage-Safe Regime-Conditioned Crypto Alpha Evaluation}
+
+\begin{document}
+
+\begin{abstract}
+Regime-conditioned alpha models are attractive because financial relationships can change across trend, stress, and transition periods. However, regime labels are latent and easy to overfit, especially in multi-asset crypto backtests. This paper studies whether Hidden Markov Model guided contrastive representations improve regime-conditioned crypto alpha modeling under leakage-safe validation. The central contribution is a validation repair: an initially positive-looking positional-fold result is retained only as audit history after discovering cross-asset calendar overlap, then replaced with common-calendar fold-local validation, frozen-candidate rules, and a one-shot locked external holdout. On the registered 10-asset external holdout, the frozen guided-HMM candidate improves mean asset IC versus global LightGBM (0.0007 versus -0.0042) and raw-feature HMM (0.0007 versus -0.0024), with non-worse Sharpe versus both references (-0.369 versus -1.281 and -0.954). The finding is deliberately limited: the locked final candidate still has negative Sharpe and negative total return (-6.6\%), so the paper does not claim a tradable strategy.
+\end{abstract}
+
+\keywords{financial machine learning, regime learning, contrastive learning, hidden Markov models, validation, crypto assets}
+
+\maketitle
+
+\section{Introduction}
+Financial machine-learning papers often fail because the validation protocol is easier to overfit than the model. This paper studies a regime-learning system under a deliberately strict empirical protocol. The original development path produced an exciting guided-regime result, but a later audit found that per-symbol positional folds overlapped in calendar time. Rather than treating that result as evidence, the project invalidated it, kept it as audit history, and rebuilt the benchmark around common-calendar fold-local evaluation.
+
+The resulting paper is not a trading-system paper. It asks a narrower mechanism question: can sequentially guided representation learning produce regimes that are more useful than global models and raw-feature HMM regimes under leakage-safe validation? The answer is mixed and paper-safe. The frozen guided-HMM candidate satisfies a prewritten locked relative IC/Sharpe comparison against two primary references, but locked Sharpe and total return remain negative. The contribution is therefore a research-grade evaluation framework and a mechanism boundary for HMM-guided contrastive regime learning.
+
+\section{Related Work}
+The project sits at the intersection of financial ML validation, latent regime modeling, contrastive representation learning, and reproducible empirical benchmarking. Purged and walk-forward validation are central in financial ML because adjacent labels and overlapping horizons can create optimistic backtests \cite{lopezdeprado2018afml}. Regime-switching models and HMMs provide a classical way to impose temporal persistence on latent market states \cite{hamilton1989regime,rabiner1989hmm}. Contrastive learning provides a flexible representation-learning objective for sequential data \cite{oord2018cpc,chen2020simclr}, while gradient boosting remains a strong tabular baseline in finance-style feature sets \cite{lightgbm2017}.
+
+\section{Data and Validation Protocol}
+The repository separates evidence into development-observed and locked-confirmatory roles. Crypto-20 development evidence is used for validation repair, diagnosis, and candidate freezing. The external locked holdout is registered before model outcomes are inspected and contains 10 external assets, 18 folds, and 129,600 out-of-sample rows per method. The same locked holdout cannot be reused for threshold tuning, feature selection, label selection, architecture search, or candidate switching.
+
+All predictive comparisons use common-calendar fold-local validation. Feature scaling, weak-supervision HMM fitting, contrastive pair construction, encoder training, regime assignment, and downstream LightGBM fitting are authorized only inside the training interval for each fold. This design directly addresses the earlier cross-asset calendar-overlap failure.
+
+\section{Methods}
+The benchmark compares a global LightGBM model with regime-conditioned variants based on raw-feature HMM states, KMeans states, volatility buckets, vanilla contrastive regimes, contrastive-HMM regimes, HMM-guided contrastive-GMM regimes, and HMM-guided contrastive-HMM regimes. The frozen final candidate is the HMM-guided contrastive-HMM representation followed by regime-conditioned LightGBM. HMM states are treated as weak proxy supervision and a sequential reference, not as ground-truth market regimes.
+
+\section{Results}
+\begin{table*}[t]
+\caption{Evidence roles and claim boundaries.}
+\label{tab:evidence-boundaries}
+\begin{tabular}{lll}
+\toprule
+Evidence block & Data role & Claim boundary \\
+\midrule
+validation\_repair & development\_observed & Do not cite invalidated positional-fold runs as predictive evidence. \\
+repaired\_crypto20\_development & development\_observed & Development results motivate interpretation, not final-test confirmation. \\
+development\_statistical\_adjudication & development\_observed & No corrected dominance or robust positive-alpha claim. \\
+execution\_and\_mechanism\_diagnostics & development\_observed & Diagnostics explain fragility; they are not a new tuned model. \\
+locked\_external\_holdout & locked\_registered\_unobserved & Tradable-alpha claim is not\_supported; no candidate switching or same-holdout retuning. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\caption{Locked external holdout performance. All methods have equal locked coverage; rows are not independent statistical units.}
+\label{tab:locked-results}
+\begin{tabular}{lrrrrr}
+\toprule
+Method & Mean asset IC & Sharpe & Total return & Drawdown & Rows \\
+\midrule
+Guided-HMM + regime LightGBM & 0.0007 & -0.369 & -6.6\% & -11.4\% & 129600 \\
+Guided-GMM + regime LightGBM & 0.0072 & -1.704 & -27.2\% & -29.4\% & 129600 \\
+Raw HMM + regime LightGBM & -0.0024 & -0.954 & -16.0\% & -18.0\% & 129600 \\
+Global LightGBM & -0.0042 & -1.281 & -16.4\% & -16.7\% & 129600 \\
+Vanilla contrastive-GMM + regime LightGBM & -0.0002 & 0.273 & 3.6\% & -9.9\% & 129600 \\
+Vanilla contrastive-HMM + regime LightGBM & -0.0012 & -0.728 & -10.9\% & -15.4\% & 129600 \\
+KMeans + regime LightGBM & -0.0020 & -0.300 & -5.5\% & -13.8\% & 129600 \\
+Volatility buckets + regime LightGBM & -0.0017 & -0.642 & -11.1\% & -18.3\% & 129600 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\caption{Prewritten primary comparison for the frozen final candidate.}
+\label{tab:primary-rule}
+\begin{tabular}{lrrc}
+\toprule
+Reference & $\Delta$ IC & $\Delta$ Sharpe & Equal coverage \\
+\midrule
+Global LightGBM & 0.0049 & 0.912 & True \\
+Raw HMM + regime LightGBM & 0.0031 & 0.585 & True \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:locked-results} shows that the frozen guided-HMM candidate has mean asset IC 0.0007, Sharpe -0.369, and total return -6.6\%. Table~\ref{tab:primary-rule} records the prewritten relative comparison against global LightGBM and raw-feature HMM. This is limited locked relative support. It is not a profitable-alpha result.
+
+The higher-IC guided-GMM diagnostic row does not replace the frozen final candidate. It was not the pre-registered final candidate and has worse locked Sharpe and total return. Switching to it after seeing the locked holdout would be post-hoc selection.
+
+\section{Discussion and Limitations}
+The strongest interpretation is empirical discipline rather than trading profitability. The method can improve a narrow locked relative rule while still failing to produce positive locked Sharpe or positive locked return. HMM guidance may improve sequential structure, but that structure is not automatically an exploitable trading edge after transaction costs and fold-local validation. The paper therefore blocks broad dominance, deployment, and profitability claims.
+
+Limitations include the crypto-only universe, weak proxy regime labels, overlapping financial outcomes, and the single spent locked external holdout. The locked holdout cannot be reused for model rescue. Any future model improvement must use new development evidence or a newly registered confirmatory test.
+
+\section{Reproducibility}
+The repository includes run scripts, curated result tables, claim-control reports, artifact manifests, and a research-grade regression gate. Bulky row-level predictions and raw data are excluded from Git when they are too large or reproducible. Persistent artifact availability should not be claimed until the release is archived in a repository with a DOI or equivalent permanent identifier.
+
+\section{Conclusion}
+HMM-guided contrastive regimes receive limited locked-holdout relative support, but not profitable-alpha support. The contribution is a leakage-safe benchmark path: identify an attractive result, invalidate it when the validation audit fails, repair the protocol, freeze a candidate, spend one locked holdout, and report the boundary honestly.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{phase47_references}
+
+\end{document}

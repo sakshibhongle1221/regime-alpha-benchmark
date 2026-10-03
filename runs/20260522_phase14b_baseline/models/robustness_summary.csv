@@ -1,0 +1,10 @@
+symbol_scope,target,horizon,best_ic_method,best_ic,best_sharpe_method,best_sharpe,lowest_drawdown_method,lowest_drawdown,methods_tested,n_test_rows_per_method
+BTCUSDT,tb_label_4h,4h,regime_lgbm_hmm,0.0016497110339429052,regime_lgbm_hmm,-0.9929674404527208,regime_lgbm_contrastive,-0.7551134803326682,6,12960
+BTCUSDT,tb_label_8h,8h,regime_lgbm_kmeans,-0.003414332891918505,regime_lgbm_contrastive,-0.5457146331090871,regime_lgbm_contrastive,-0.8122094489460786,6,12960
+BTCUSDT,tb_label_24h,24h,regime_lgbm_kmeans,0.017541535470551532,regime_lgbm_contrastive_hmm,-0.21129291822521304,regime_lgbm_kmeans,-0.9902659601215915,6,12960
+ETHUSDT,tb_label_4h,4h,regime_lgbm_vol_bucket,0.020829430970350213,regime_lgbm_vol_bucket,0.3154481360909679,regime_lgbm_vol_bucket,-0.44862292095007744,6,12960
+ETHUSDT,tb_label_8h,8h,global_lgbm,0.009549204605851638,regime_lgbm_contrastive,-0.20082327540052913,regime_lgbm_hmm,-0.8742533893400225,6,12960
+ETHUSDT,tb_label_24h,24h,global_lgbm,0.034822013129168404,global_lgbm,0.3542083621255878,regime_lgbm_vol_bucket,-0.9869705087665526,6,12960
+BTCUSDT+ETHUSDT,tb_label_4h,4h,regime_lgbm_vol_bucket,0.010333347173120205,regime_lgbm_hmm,-0.20518378792601913,regime_lgbm_hmm,-0.4357167970682621,6,25920
+BTCUSDT+ETHUSDT,tb_label_8h,8h,regime_lgbm_kmeans,0.007158703018405389,regime_lgbm_hmm,-0.3404628502108155,global_lgbm,-0.6883972816511268,6,25920
+BTCUSDT+ETHUSDT,tb_label_24h,24h,regime_lgbm_contrastive_hmm,0.03109829121722347,regime_lgbm_vol_bucket,0.3212650995455179,regime_lgbm_vol_bucket,-0.9153570595238186,6,25920

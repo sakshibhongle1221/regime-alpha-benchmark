@@ -1,0 +1,10 @@
+section,page_budget,purpose
+Abstract,0.35,State limited locked relative support and no tradable-alpha claim.
+Introduction,0.9,"Motivate regime learning, validation failure, and corrected contribution."
+Related Work,0.75,"Position against financial ML validation, HMM regimes, contrastive time-series learning, and reproducibility."
+Data and Validation,1.0,"Explain data roles, common-calendar fold-local validation, labels, costs, and locked holdout."
+Methods,1.0,Summarize baselines and frozen HMM-guided candidate without excessive implementation detail.
+Results,1.1,Show repaired development evidence and locked external comparison in compact tables.
+Discussion and Limitations,0.9,"Explain mechanism boundary, negative Sharpe/return, and no same-holdout rescue."
+Reproducibility,0.45,Summarize artifact commands and archive policy.
+References,1.55,Reserve enough space for high-quality citations inside eight total pages.

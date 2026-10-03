@@ -1,0 +1,6 @@
+claim_id,allowed_wording,section,required_artifact,forbidden_extension
+validation_repair_contribution,The original positional-fold evidence is invalidated and retained only as audit history.,Validation protocol,reports/phase39r_neural_fold_local_results.md,Do not use invalidated positional-fold results as predictive evidence.
+locked_relative_support,The frozen guided-HMM candidate satisfies the prewritten locked relative IC/Sharpe rule versus global LightGBM and raw-feature HMM.,Locked external holdout,models/phase43b_locked_external_primary_comparison.csv,Do not claim broad method dominance or statistical proof of profitability.
+positive_tradable_alpha,Positive tradable alpha is not supported by the locked result.,Discussion and limitations,models/phase43b_locked_external_claims.csv,Do not claim a deployable trading strategy.
+same_holdout_retuning,The same locked holdout cannot be reused for model rescue.,Limitations and future work,reports/phase43b_locked_external_adjudication.md,"Do not tune thresholds, labels, features, architectures, or candidate choice on the spent holdout."
+venue_framing,"This is a validation-and-mechanism paper, not a profitability paper.","Abstract, introduction, conclusion",reports/phase45_venue_manuscript_package.md,Do not let venue-facing prose soften the negative Sharpe/return limitation.

@@ -1,0 +1,6 @@
+rule_id,rule,reason,status
+p41_no_outer_test_selection,Do not select candidate parameters from repaired outer-test predictions or Phase 40 statistical outputs.,Prevents post-hoc tuning against already inspected development test evidence.,mandatory
+p41_inner_nll_primary,Use inner_validation_nll as the primary candidate selector.,Phase 40 showed calibration/NLL weakness; NLL is a proper scoring rule for probability calibration.,mandatory
+p41_turnover_guardrail,Reject candidates that increase turnover by more than 25% versus the fold baseline.,Prevents a candidate from appearing better only by trading more aggressively.,mandatory
+p41_equal_coverage,Reject candidates whose outer-test coverage differs from the repaired baseline.,Maintains equal method coverage for fair statistical adjudication.,mandatory
+p41_freeze_before_locked_test,Freeze exactly one candidate before any future locked external evaluation.,Keeps the final test confirmatory rather than exploratory.,mandatory

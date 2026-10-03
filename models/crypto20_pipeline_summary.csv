@@ -1,0 +1,9 @@
+metric,value,notes
+symbols_checked,20,Crypto-20 symbols resolved from universe artifact.
+symbols_passed,20,"Symbols passing OHLCV, feature, target, and gap checks."
+symbols_failed,0,"Symbols requiring exclusion, replacement, or re-ingestion."
+pass_rate,1.0,Pass fraction across selected universe.
+min_required_pass_rate,0.9,Gate threshold before regime benchmarking.
+min_bars,12000,Minimum OHLCV bars per symbol.
+max_gap_hours,6.0,Maximum allowed adjacent-bar gap.
+gate_status,pass,Proceed only if this is pass.

@@ -1,0 +1,26 @@
+design_rank,symbol,base_asset,universe_group,notes,bars,earliest,latest,median_quote_volume,median_range_proxy,gap_count,max_gap_hours,is_stable_or_synthetic,has_local_history,coverage_pass,gap_pass,liquidity_pass,eligible,selection_status,exclusion_reason
+51,AXSUSDT,AXS,gaming,High-liquidity gaming asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+52,APEUSDT,APE,nft_culture,High-liquidity NFT/culture asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+53,CHZUSDT,CHZ,consumer,High-liquidity consumer/fan-token ecosystem asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+54,ENSUSDT,ENS,identity,High-liquidity identity asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+55,COMPUSDT,COMP,defi,High-liquidity DeFi lending asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+56,SNXUSDT,SNX,defi,High-liquidity derivatives DeFi asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+57,CRVUSDT,CRV,defi,High-liquidity DeFi asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+58,1INCHUSDT,1INCH,defi,High-liquidity DeFi aggregator asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+59,CAKEUSDT,CAKE,defi,High-liquidity DeFi exchange asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+60,THETAUSDT,THETA,media_infra,High-liquidity media infrastructure asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+61,EOSUSDT,EOS,legacy_layer1,Legacy layer-1 asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+62,ZECUSDT,ZEC,privacy,Legacy privacy asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+63,DASHUSDT,DASH,legacy_payment,Legacy payments asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+64,MINAUSDT,MINA,layer1,Layer-1 asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+65,KAVAUSDT,KAVA,layer1,Layer-1 asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+66,ROSEUSDT,ROSE,privacy_compute,Privacy/compute asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+67,CELOUSDT,CELO,layer1,Layer-1 payments asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+68,IOTAUSDT,IOTA,iot,IoT themed asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+69,QTUMUSDT,QTUM,legacy_layer1,Legacy layer-1 asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+70,ZILUSDT,ZIL,layer1,Layer-1 asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+71,ANKRUSDT,ANKR,infrastructure,Infrastructure asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+72,BATUSDT,BAT,consumer,Consumer/web asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+73,ENJUSDT,ENJ,gaming,Gaming asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+74,ONEUSDT,ONE,layer1,Layer-1 asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n
+75,IOSTUSDT,IOST,layer1,Layer-1 asset.,0,,,0.0,0.0,0,0.0,False,False,False,True,True,False,pending_ingestion,outside_requested_top_n

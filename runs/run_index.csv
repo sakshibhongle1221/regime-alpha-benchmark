@@ -1,0 +1,2 @@
+run_id,created_at_utc,phase,source_ref,source_commit,git_branch,dirty_worktree,artifact_count,missing_artifact_count,notes
+20260522_phase14b_baseline,2026-05-21T22:15:44+00:00,phase14b_baseline,v1.3-phase14b,f0902b21057d3dc464ce9e31d6be718a70531c63,codex/phase-15-artifact-versioning,True,39,0,Frozen Phase 14B baseline before Phase 15 statistical and encoder work.

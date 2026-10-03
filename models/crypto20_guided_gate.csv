@@ -1,0 +1,2 @@
+gate,status,recommendation,hard_failures,notes
+crypto20_guided_encoder_readiness,pass,run_full_crypto20_guided_encoder,,Pair-mining coverage is sufficient; compute estimate decides whether to run a staged prototype or full Crypto-20 guided training.

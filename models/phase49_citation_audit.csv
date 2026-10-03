@@ -1,0 +1,12 @@
+citation_key,label,in_tex,in_bib,status
+ts2vec2022,TS2Vec,True,True,pass
+tnc2021,TNC,True,True,pass
+cost2022,CoST,True,True,pass
+tstcc2021,TS-TCC,True,True,pass
+tfc2022,TF-C,True,True,pass
+lopezdeprado2018afml,lopezdeprado2018afml,True,True,pass
+hamilton1989regime,hamilton1989regime,True,True,pass
+rabiner1989hmm,rabiner1989hmm,True,True,pass
+oord2018cpc,oord2018cpc,True,True,pass
+chen2020simclr,chen2020simclr,True,True,pass
+lightgbm2017,lightgbm2017,True,True,pass

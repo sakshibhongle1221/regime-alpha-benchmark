@@ -1,0 +1,10 @@
+freeze_id,rule_id,rule,status
+phase43-locked-holdout-freeze-v1,success_condition,The final candidate must improve over both primary references on mean asset IC and show non-worse transaction-cost-adjusted Sharpe without violating coverage or statistical guardrails.,required
+phase43-locked-holdout-freeze-v1,failure_condition,"If the final candidate does not satisfy the success condition, the paper reports a failed locked confirmation without same-holdout tuning.",required
+phase43-locked-holdout-freeze-v1,allowed_claim_if_success,The guided-HMM mechanism shows confirmatory support on the registered locked holdout.,allowed
+phase43-locked-holdout-freeze-v1,allowed_claim_if_failure,The guided-HMM mechanism remains a structurally motivated development finding but does not receive locked holdout confirmation.,allowed
+phase43-locked-holdout-freeze-v1,forbidden_claim_1,tradable strategy,forbidden
+phase43-locked-holdout-freeze-v1,forbidden_claim_2,guaranteed alpha,forbidden
+phase43-locked-holdout-freeze-v1,forbidden_claim_3,final-test tuning improved performance,forbidden
+phase43-locked-holdout-freeze-v1,forbidden_claim_4,Phase 41B calibration rescued the model,forbidden
+phase43-locked-holdout-freeze-v1,forbidden_claim_5,threshold tuning rescued the model,forbidden

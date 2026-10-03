@@ -1,0 +1,16 @@
+metric,method,wins
+IC,regime_lgbm_kmeans,3
+IC,regime_lgbm_vol_bucket,2
+IC,global_lgbm,2
+IC,regime_lgbm_hmm,1
+IC,regime_lgbm_contrastive_hmm,1
+Sharpe,regime_lgbm_hmm,3
+Sharpe,regime_lgbm_contrastive,2
+Sharpe,regime_lgbm_vol_bucket,2
+Sharpe,regime_lgbm_contrastive_hmm,1
+Sharpe,global_lgbm,1
+drawdown,regime_lgbm_vol_bucket,3
+drawdown,regime_lgbm_contrastive,2
+drawdown,regime_lgbm_hmm,2
+drawdown,regime_lgbm_kmeans,1
+drawdown,global_lgbm,1

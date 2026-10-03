@@ -1,0 +1,13 @@
+metric,value,status
+symbols,20.0,pass
+eligible_windows,348606.0,pass
+regimes_present_global,4.0,pass
+min_global_regime_windows,38603.0,pass
+max_global_regime_pct,0.3576903438265549,pass
+positive_anchor_coverage_pct,1.0,pass
+directed_hard_negative_pairs,6278476.0,pass
+hard_negative_pairs_per_window,18.01023505045811,pass
+global_regime_0_windows,88402.0,pass
+global_regime_1_windows,96908.0,pass
+global_regime_2_windows,38603.0,pass
+global_regime_3_windows,124693.0,pass

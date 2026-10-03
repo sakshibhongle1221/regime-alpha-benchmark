@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "phase": "41",
+  "name": "bounded-calibration-soft-gating-v1",
+  "data_role": "development_observed",
+  "selection_boundary": "inner_chronological_validation_only",
+  "forbidden_selection_inputs": [
+    "models/crypto20_repaired_fold_local_alpha_oos_predictions.csv",
+    "models/crypto20_repaired_fold_local_statistical_claims.csv",
+    "models/crypto20_repaired_fold_local_statistical_method_summary.csv",
+    "locked_final_test"
+  ],
+  "allowed_selection_inputs": [
+    "outer_training_rows",
+    "inner_train_rows",
+    "inner_validation_rows",
+    "fold_local_train_assignments",
+    "fold_local_inner_validation_assignments"
+  ],
+  "candidate_grids": {
+    "probability_temperature": [0.75, 1.0, 1.25, 1.5, 2.0],
+    "prior_blend_weight": [0.0, 0.05, 0.1, 0.2],
+    "posterior_temperature": [0.5, 0.75, 1.0, 1.5, 2.0],
+    "global_regime_shrinkage": [0.0, 0.25, 0.5],
+    "score_threshold": [0.0, 0.025, 0.05, 0.075]
+  },
+  "primary_selection_metric": "inner_validation_nll",
+  "secondary_selection_metrics": [
+    "inner_validation_mean_asset_ic",
+    "inner_validation_turnover",
+    "inner_validation_coverage"
+  ],
+  "hard_constraints": {
+    "max_turnover_increase_vs_baseline": 0.25,
+    "minimum_method_coverage_rows_equal_to_baseline": true,
+    "outer_test_selection_forbidden": true
+  }
+}
